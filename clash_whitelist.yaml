@@ -1,6 +1,6 @@
 # АнтиБабкаВПН — режим «белые списки»
 # Клиент: Clash Meta / Mihomo (Clash Verge Rev, FlClash, Karing, Hiddify, Stash)
-# Серверов в конфиге: 236. Группа «🤖 АВТО» сама выбирает самый быстрый.
+# Серверов в конфиге: 180. Группа «🤖 АВТО» сама выбирает самый быстрый.
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -18,13 +18,30 @@ dns:
 proxies:
 - name: '🇦🇱 AL #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
+  server: alb.play-cat.uk
+  port: 443
+  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: alb.play-cat.uk
+  alpn:
+  - h2
+  skip-cert-verify: false
+  xhttp-opts:
+    path: /static/js/chunk
+    mode: stream-one
+    host: alb.play-cat.uk
+- name: '🇦🇱 AL #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
   server: 157.22.240.159
   port: 443
   uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
   udp: true
   network: xhttp
   tls: true
-  client-fingerprint: qq
+  client-fingerprint: chrome
   servername: alb.play-cat.uk
   alpn:
   - h2
@@ -65,7 +82,7 @@ proxies:
     path: /ccxf5snr06b8xxb6
     mode: auto
     host: tansy-wharf.cdn.cachefleet.com
-- name: '🇲🇰 MK #1 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇲🇰 MK #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 31.59.83.4
   port: 443
@@ -74,22 +91,37 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   servername: mk.global-cdn.org
   skip-cert-verify: false
   reality-opts:
     public-key: BSPkA0yUFBZ7JS7rD69rLaTn_5QSAaPQZtO7HV_et30
     short-id: b868b87c347a451e
+- name: '🇦🇺 Австралия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: dddz-3-z.473221.xyz
+  port: 33162
+  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: edge
+  servername: download-porter.hoyoverse.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Qp9_bpGExQK_h5LMXLLwVA2o1vifMQwGJ6Qh2-X26Ro
+    short-id: 3fe1e73fc9ecc8d7
 - name: '🇦🇹 Австрия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: at1.japancase.site
+  server: 178.22.31.72
   port: 443
   uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: edge
+  client-fingerprint: chrome
   servername: at1.japancase.site
   skip-cert-verify: false
   reality-opts:
@@ -115,35 +147,64 @@ proxies:
     host: avasa.qikbro.com
 - name: '🇦🇹 Австрия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 82.148.252.142
+  server: at1.japancase.site
   port: 443
-  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: avasa.qikbro.com
+  client-fingerprint: edge
+  servername: at1.japancase.site
   skip-cert-verify: false
   reality-opts:
-    public-key: 5f3YKh1kMwC_Q4BA-8BBBMmUC2hmRDCDb1pr2xz6CUs
-    short-id: 69747b8a2d26d6b4
-  xhttp-opts:
-    path: /assets/js/app.4954351f.js
-    mode: stream-one
-    host: avasa.qikbro.com
-- name: '🇦🇿 Азербайджан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
+    short-id: 41ae8e266bc3346f
+- name: '🇦🇹 Австрия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 95.143.188.113
+  server: 178.22.31.171
   port: 443
-  uuid: c47159bb-2c15-440d-b239-8594d7e7efbb
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: safari
-  servername: jagamsrxd6.j.cloudfront.hls.vodcdn-edge.net
+  client-fingerprint: firefox
+  servername: at1.japancase.site
   skip-cert-verify: false
-  grpc-opts:
-    grpc-service-name: sync.v1
+  reality-opts:
+    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
+    short-id: 41ae8e266bc3346f
+- name: '🇦🇹 Австрия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 82.148.252.219
+  port: 443
+  uuid: ccb8ff48-3934-4250-b4ec-bb76b95d154f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: at1.fox-lisa.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs
+    short-id: 027af64166562b09
+- name: '🇦🇹 Австрия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: at1.fox-lisa.ru
+  port: 443
+  uuid: ccb8ff48-3934-4250-b4ec-bb76b95d154f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: ios
+  servername: at1.fox-lisa.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs
+    short-id: 027af64166562b09
 - name: '🇧🇾 Беларусь #1 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 178.172.227.228
@@ -153,43 +214,13 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: edge
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-- name: '🇧🇾 Беларусь #2 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 95.128.71.79
-  port: 10444
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
   client-fingerprint: safari
   servername: ads.x5.ru
   skip-cert-verify: false
   reality-opts:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
-- name: '🇧🇾 Беларусь #3 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 95.128.71.79
-  port: 10444
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: chrome
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-- name: '🇧🇾 Беларусь #4 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇧🇾 Беларусь #2 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 178.172.227.124
   port: 10444
@@ -198,7 +229,7 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: safari
   servername: ads.x5.ru
   skip-cert-verify: false
   reality-opts:
@@ -213,27 +244,109 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   servername: ripelever.net
   alpn:
   - h2
   - http/1.1
   skip-cert-verify: false
-- name: '🇧🇬 Болгария #2 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇬🇧 Великобритания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 168.113.128.70
-  port: 20105
-  uuid: 9aff658c-1f80-4c82-9213-48ca26996142
+  server: 5.104.74.172
+  port: 8443
+  uuid: fe60c0a8-e7f7-44ed-b2f5-a6f6e1c903e4
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: uk-room07.filesnap.tech
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 48j01Jsa4o8zfmCGEFoVjn-YeALM80-DSG_-nAZUBDM
+    short-id: dbef98744832b751
+- name: '🇬🇧 Великобритания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 187.7.205.53
+  port: 443
+  uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: uk.song69.fun
+  skip-cert-verify: false
+  reality-opts:
+    public-key: YVgODZwpBBvd17pOrJ8VN1cJ11i6PA5pns6gqJh-vRs
+    short-id: ''
+  xhttp-opts:
+    path: /static/v2/media
+    mode: auto
+    host: uk.song69.fun
+- name: '🇬🇧 Великобритания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 5.104.74.21
+  port: 8443
+  uuid: 701daee3-3d5c-4957-b785-a8b24a0b418a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: uk-room05.filesnap.tech
+  skip-cert-verify: false
+  reality-opts:
+    public-key: FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8
+    short-id: 7da3ba09a037e956
+- name: '🇬🇧 Великобритания #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 5.104.74.172
+  port: 8443
+  uuid: a3948129-a405-4ab1-81ec-ddef7b79acff
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: uk-room07.filesnap.tech
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 48j01Jsa4o8zfmCGEFoVjn-YeALM80-DSG_-nAZUBDM
+    short-id: dbef98744832b751
+- name: '🇬🇧 Великобритания #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: uk.song69.fun
+  port: 443
+  uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: uk.song69.fun
+  skip-cert-verify: false
+  reality-opts:
+    public-key: YVgODZwpBBvd17pOrJ8VN1cJ11i6PA5pns6gqJh-vRs
+    short-id: ''
+  xhttp-opts:
+    path: /static/v2/media
+    mode: auto
+    host: uk.song69.fun
+- name: '🇬🇧 Великобритания #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: fduknew.titun.su
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: chrome
-  servername: ripelever.net
-  alpn:
-  - '[h2%2Chttp%2F1.1]'
+  servername: bizorg.su
   skip-cert-verify: false
-- name: '🇬🇧 Великобритания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+- name: '🇬🇧 Великобритания #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 50.7.227.77
   port: 443
@@ -248,127 +361,7 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-- name: '🇬🇧 Великобритания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 212.69.135.27
-  port: 8443
-  uuid: 688ece4d-84ee-4db7-bc61-85776df0a3b4
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: uk-room05.filesnap.tech
-  skip-cert-verify: false
-  reality-opts:
-    public-key: FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8
-    short-id: 7da3ba09a037e956
-- name: '🇬🇧 Великобритания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 212.69.135.70
-  port: 8443
-  uuid: 5ba26499-24f7-4b9a-8a8d-6f9d75d09621
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: uk-room05.filesnap.tech
-  skip-cert-verify: false
-  reality-opts:
-    public-key: FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8
-    short-id: 7da3ba09a037e956
-- name: '🇬🇧 Великобритания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 5.104.74.70
-  port: 8443
-  uuid: 176b50a0-cce0-416d-bc4c-6694271985dd
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: uk-room07.filesnap.tech
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 48j01Jsa4o8zfmCGEFoVjn-YeALM80-DSG_-nAZUBDM
-    short-id: dbef98744832b751
-- name: '🇬🇧 Великобритания #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 5.104.74.69
-  port: 8443
-  uuid: 16cd1338-ecb9-44f3-8f0c-919242370ef2
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: uk-room06.filesnap.tech
-  skip-cert-verify: false
-  reality-opts:
-    public-key: D9IxnCLtXuDLR1yBNZwWdxxbNDfsZgN3C9IsqKgG8Ec
-    short-id: 17a35165f9d25923
-- name: '🇬🇧 Великобритания #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 52.56.166.118
-  port: 1412
-  uuid: 109852f2-4591-498c-9a96-f1d9206ce804
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: www.dhl.de
-  skip-cert-verify: false
-  reality-opts:
-    public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
-    short-id: 4ea6a183
-- name: '🇬🇧 Великобритания #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 212.69.135.27
-  port: 8443
-  uuid: b3ac565c-fe3a-4279-868c-43c41c05e358
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: chrome
-  servername: uk-room05.filesnap.tech
-  skip-cert-verify: false
-  reality-opts:
-    public-key: FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8
-    short-id: 7da3ba09a037e956
-- name: '🇬🇧 Великобритания #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: engnode.barnikle1.me
-  port: 1412
-  uuid: 109852f2-4591-498c-9a96-f1d9206ce804
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: chrome
-  servername: www.dhl.de
-  skip-cert-verify: false
-  reality-opts:
-    public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
-    short-id: 4ea6a183
 - name: '🇬🇧 Великобритания #9 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: www.agahiya.ir
-  port: 443
-  uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: soliconf-gghosin4-cell.dormhost.app
-  skip-cert-verify: false
-  ws-opts:
-    path: /jx-y8179aild6rsmj
-    headers:
-      Host: soliconf-gghosin4-cell.dormhost.app
-- name: '🇬🇧 Великобритания #10 · 🤖 ИИ · 🌍 Блокировки'
   type: vless
   server: www.sarzaminaryan.ir
   port: 443
@@ -383,22 +376,7 @@ proxies:
     path: /jx-y8179aild6rsmj
     headers:
       Host: soliconf-gghosin4-cell.dormhost.app
-- name: '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 34.39.80.57
-  port: 50818
-  uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: yingguo.rymaker.cn
-  skip-cert-verify: false
-  ws-opts:
-    path: /GunService
-    headers:
-      Host: yingguo.rymaker.cn
-- name: '🇬🇧 Великобритания #12 · 🤖 ИИ · 🌍 Блокировки'
+- name: '🇬🇧 Великобритания #10 · 🤖 ИИ · 🌍 Блокировки'
   type: vless
   server: www.farahghanizadeh.ir
   port: 443
@@ -413,22 +391,67 @@ proxies:
     path: /jx-y8179aild6rsmj
     headers:
       Host: soliconf-gghosin4-cell.dormhost.app
-- name: '🇩🇪 Германия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки'
   type: vless
-  server: 177.202.74.60
+  server: www.agahiya.ir
   port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: soliconf-gghosin4-cell.dormhost.app
+  skip-cert-verify: false
+  ws-opts:
+    path: /jx-y8179aild6rsmj
+    headers:
+      Host: soliconf-gghosin4-cell.dormhost.app
+- name: '🇬🇧 Великобритания #12 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 34.39.80.57
+  port: 50818
+  uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: yingguo.rymaker.cn
+  skip-cert-verify: false
+  ws-opts:
+    path: /GunService
+    headers:
+      Host: yingguo.rymaker.cn
+- name: '🇬🇧 Великобритания #13 · 🤖 ИИ · 🌍 Блокировки'
+  type: vless
+  server: engnode.barnikle1.me
+  port: 1412
+  uuid: 109852f2-4591-498c-9a96-f1d9206ce804
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: gembeforeshoping.space
+  servername: www.dhl.de
   skip-cert-verify: false
   reality-opts:
-    public-key: lY9sPrXzj3Dlsj6JTP5UolK1RmIAlstuAy3dBJ97ag0
-    short-id: ''
-- name: '🇩🇪 Германия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
+    short-id: 4ea6a183
+- name: '🇬🇧 Великобритания #14 · 🤖 ИИ · 🌍 Блокировки'
+  type: vless
+  server: 52.56.166.118
+  port: 1412
+  uuid: 109852f2-4591-498c-9a96-f1d9206ce804
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: www.dhl.de
+  skip-cert-verify: false
+  reality-opts:
+    public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
+    short-id: 4ea6a183
+- name: '🇩🇪 Германия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 78.17.215.170
   port: 443
@@ -443,122 +466,250 @@ proxies:
   reality-opts:
     public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
     short-id: a7c31f92
-- name: '🇩🇪 Германия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇩🇪 Германия #2 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 5.252.179.15
+  server: 144.31.166.12
   port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: www.bing.com
+  servername: gemsubbgem.world
   skip-cert-verify: false
   reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
+    public-key: 6PJlXT9xrgJP8RXfhpWDMKPh4eqGt_IZmenc_a6v0gg
+    short-id: ''
+- name: '🇩🇪 Германия #3 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 213.152.165.204
+  port: 2094
+  uuid: b7d28421-b7f8-43af-ad2a-da2da9ca6520
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+    short-id: 55986a94e2228791
 - name: '🇩🇪 Германия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 79.137.207.198
-  port: 8443
-  uuid: e83932a8-5cfe-4747-8e5b-43d6d3e96e82
+  server: 79.182.39.138
+  port: 443
+  uuid: 55458d10-24ab-4ea6-a522-13741b546f2a
   udp: true
-  network: xhttp
+  network: tcp
   tls: true
-  client-fingerprint: chrome
-  servername: stacklayer.ru
+  client-fingerprint: firefox
+  servername: 345739t.de15.h1clayd.click
   skip-cert-verify: false
   reality-opts:
-    public-key: 0Yda-t_3S31WaEd-8yyDfVWEyIOyxtqPD8k4P5rtxgk
-    short-id: 98f95b300717abf0
-  xhttp-opts:
-    path: /vless-xhttp
-    mode: auto
-    host: stacklayer.ru
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+    short-id: 23732d14a527990d
 - name: '🇩🇪 Германия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 79.137.207.198
+  server: 191.44.108.6
   port: 443
-  uuid: e83932a8-5cfe-4747-8e5b-43d6d3e96e82
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: chrome
-  servername: stacklayer.ru
+  client-fingerprint: firefox
+  servername: c9.qwyak.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: 0Yda-t_3S31WaEd-8yyDfVWEyIOyxtqPD8k4P5rtxgk
-    short-id: 98f95b300717abf0
+    public-key: A0QL_j-ReX7AotEj1w8qX9rHRgN2WycTZ43gUvuvZ00
+    short-id: 3cf8d11aa0415d29
 - name: '🇩🇪 Германия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 45.83.85.4
+  server: sundaylanzgem.site
   port: 443
-  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: velka.qikbro.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: yG9PCRThFyrRI10PjbNzQPvWzjnvxGbzwzHuvYMWRys
-    short-id: 6300ca9f9d90b6f3
-  xhttp-opts:
-    path: /assets/js/app.043c9513.js
-    mode: stream-one
-    host: velka.qikbro.com
-- name: '🇩🇪 Германия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 45.83.85.4
-  port: 443
-  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: velka.qikbro.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: yG9PCRThFyrRI10PjbNzQPvWzjnvxGbzwzHuvYMWRys
-    short-id: 6300ca9f9d90b6f3
-  xhttp-opts:
-    path: /assets/js/app.043c9513.js
-    mode: auto
-    host: velka.qikbro.com
-- name: '🇩🇪 Германия #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 100497t.de18.h1clayd.click
-  port: 443
-  uuid: 94042dd1-d32a-4797-b88c-dc48459e2b34
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: 100497t.de18.h1clayd.click
+  client-fingerprint: qq
+  servername: sundaylanzgem.site
   skip-cert-verify: false
   reality-opts:
-    public-key: x-7K9P2E91DCL-0ONwm14gxDkUseukg98hYzB-1dW1A
-    short-id: 5be240e45d3c445c
+    public-key: -BN9yCN0ECqxOPoJOan1-CIMEYc5e7wdJwaeDxsUM20
+    short-id: ''
+- name: '🇩🇪 Германия #7 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 2.26.48.13
+  port: 447
+  uuid: a4ef4fa2-3080-4d2d-a4bf-571c7adf6a0b
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: cdn.vash-uzel.cyou
+  skip-cert-verify: false
+  xhttp-opts:
+    path: /api/v1/telemetry/sync
+    mode: auto
+    host: cdn.vash-uzel.cyou
+- name: '🇩🇪 Германия #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 2.26.48.13
+  port: 447
+  uuid: a4ef4fa2-3080-4d2d-a4bf-571c7adf6a0b
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: cdn.vash-uzel.cyou
+  skip-cert-verify: false
+  xhttp-opts:
+    path: /api/v1/telemetry/sync
+    mode: packet-up
+    host: cdn.vash-uzel.cyou
 - name: '🇩🇪 Германия #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 188.225.78.228
-  port: 443
-  uuid: bb190cdb-82ae-4212-b6cd-8ae9e6b768dd
+  server: 185.86.147.184
+  port: 9449
+  uuid: 27b9c12f-8fe3-4573-bbfd-09071ec554a7
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: music.yandex.ru
+  servername: passport.yandex.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: aV_BHCeZ30y4-5rpUIHaWHMYAgogLsw4AE06Rw2X4WE
-    short-id: e202a94ad1711af2
+    public-key: SsPslLCfw2CGDmCs17gTLRSUOsOfv0KgnuLnkyTqCzA
+    short-id: 62002c0a685ac208
 - name: '🇩🇪 Германия #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
+  server: 185.86.145.216
+  port: 32944
+  uuid: 27b9c12f-8fe3-4573-bbfd-09071ec554a7
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: passport.yandex.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Te3ZcFFTilb6_j4hdotSvXaRYBzGuNiRxuBh8n1NezU
+    short-id: 91d2d3db690f4b59
+- name: '🇩🇪 Германия #11 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 185.86.147.143
+  port: 7443
+  uuid: 27b9c12f-8fe3-4573-bbfd-09071ec554a7
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: passport.yandex.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 0w339GBhpDiYwa9Wgqu3z3epu8dHAzeYUFXPtvzK8To
+    short-id: 190c27ae5f2e4d2c
+- name: '🇩🇪 Германия #12 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 91.185.83.105
+  port: 9443
+  uuid: 27b9c12f-8fe3-4573-bbfd-09071ec554a7
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: passport.yandex.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Te3ZcFFTilb6_j4hdotSvXaRYBzGuNiRxuBh8n1NezU
+    short-id: 91d2d3db690f4b59
+- name: '🇩🇪 Германия #13 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 95.129.236.149
+  port: 443
+  uuid: 27b9c12f-8fe3-4573-bbfd-09071ec554a7
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: d.nehtar.ru
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
+    headers:
+      Host: d.nehtar.ru
+- name: '🇩🇪 Германия #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 87.242.127.51
+  port: 7452
+  uuid: 27b9c12f-8fe3-4573-bbfd-09071ec554a7
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: passport.yandex.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 0w339GBhpDiYwa9Wgqu3z3epu8dHAzeYUFXPtvzK8To
+    short-id: 190c27ae5f2e4d2c
+- name: '🇩🇪 Германия #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 201.51.0.7
+  port: 993
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: msk5.gacvpn.site
+  skip-cert-verify: false
+  ws-opts:
+    path: /static/js/runtime.d9e71138.js
+    headers:
+      Host: msk5.gacvpn.site
+- name: '🇩🇪 Германия #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
   server: 147.45.153.134
+  port: 443
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  udp: true
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: renderer-bridge-2-133.mirra.now
+  alpn:
+  - h2
+  skip-cert-verify: false
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+- name: '🇩🇪 Германия #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: renderer-bridge-2-133.mirra.now
+  port: 443
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  udp: true
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: renderer-bridge-2-133.mirra.now
+  alpn:
+  - h2
+  skip-cert-verify: false
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+- name: '🇩🇪 Германия #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: renderer-bridge-2-133.mirra.now
   port: 443
   uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
   udp: true
@@ -571,7 +722,7 @@ proxies:
   skip-cert-verify: false
   grpc-opts:
     grpc-service-name: VideoRenderer
-- name: '🇩🇪 Германия #11 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇩🇪 Германия #19 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: renderer-bridge-2-133.mirra.now
   port: 443
@@ -586,22 +737,22 @@ proxies:
   skip-cert-verify: false
   grpc-opts:
     grpc-service-name: VideoRenderer
-- name: '🇩🇪 Германия #12 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇩🇪 Германия #20 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: renderer-bridge-2-133.mirra.now
-  port: 443
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  server: 185.86.145.112
+  port: 10452
+  uuid: 27b9c12f-8fe3-4573-bbfd-09071ec554a7
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: chrome
-  servername: renderer-bridge-2-133.mirra.now
-  alpn:
-  - h2
+  client-fingerprint: firefox
+  servername: passport.yandex.ru
   skip-cert-verify: false
-  grpc-opts:
-    grpc-service-name: VideoRenderer
-- name: '🇩🇪 Германия #13 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  reality-opts:
+    public-key: L1Ug_ELbeZ_5q9QRzO5Lg_ZMkus9n72aiUfvFirN9Vo
+    short-id: c8a79c7b64adca2a
+- name: '🇩🇪 Германия #21 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 46.254.19.138
   port: 30055
@@ -616,7 +767,7 @@ proxies:
   reality-opts:
     public-key: Dj93DPhAYHy9WEFC6UwxgGGPGF0Hrdhv3_kkoTcy0SM
     short-id: 7b9d0309
-- name: '🇩🇪 Германия #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇩🇪 Германия #23 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 83.171.241.174
   port: 443
@@ -624,7 +775,7 @@ proxies:
   udp: true
   network: xhttp
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: ios
   servername: be5faex.de9.h1clayd.click
   skip-cert-verify: false
   reality-opts:
@@ -634,129 +785,85 @@ proxies:
     path: /fcbe41be11cb
     mode: auto
     host: be5faex.de9.h1clayd.click
-- name: '🇩🇪 Германия #16 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇭🇰 Гонконг #1 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 185.86.145.216
-  port: 32944
-  uuid: 2652d057-e4e1-40ad-b583-0c559e93d3d7
+  server: mo01.dw.sh-cloudflare.sbs
+  port: 11107
+  uuid: 792ba6a8-b887-42bd-9480-4eb19b0a9b2b
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: passport.yandex.ru
+  client-fingerprint: chrome
+  servername: cdn-dynmedia-1.microsoft.com
   skip-cert-verify: false
   reality-opts:
-    public-key: Te3ZcFFTilb6_j4hdotSvXaRYBzGuNiRxuBh8n1NezU
-    short-id: 91d2d3db690f4b59
-- name: '🇩🇪 Германия #17 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 91.185.83.105
-  port: 9443
-  uuid: 2652d057-e4e1-40ad-b583-0c559e93d3d7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: passport.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: Te3ZcFFTilb6_j4hdotSvXaRYBzGuNiRxuBh8n1NezU
-    short-id: 91d2d3db690f4b59
-- name: '🇩🇪 Германия #18 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 185.86.147.184
-  port: 9449
-  uuid: 2652d057-e4e1-40ad-b583-0c559e93d3d7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: passport.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: SsPslLCfw2CGDmCs17gTLRSUOsOfv0KgnuLnkyTqCzA
-    short-id: 62002c0a685ac208
-- name: '🇩🇪 Германия #19 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 185.86.147.143
-  port: 7443
-  uuid: 2652d057-e4e1-40ad-b583-0c559e93d3d7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: passport.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 0w339GBhpDiYwa9Wgqu3z3epu8dHAzeYUFXPtvzK8To
-    short-id: 190c27ae5f2e4d2c
-- name: '🇩🇪 Германия #20 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 185.86.145.112
-  port: 10452
-  uuid: 2652d057-e4e1-40ad-b583-0c559e93d3d7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: passport.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: L1Ug_ELbeZ_5q9QRzO5Lg_ZMkus9n72aiUfvFirN9Vo
-    short-id: c8a79c7b64adca2a
-- name: '🇩🇪 Германия #21 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 87.242.127.51
-  port: 7452
-  uuid: 2652d057-e4e1-40ad-b583-0c559e93d3d7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: passport.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 0w339GBhpDiYwa9Wgqu3z3epu8dHAzeYUFXPtvzK8To
-    short-id: 190c27ae5f2e4d2c
-- name: '🇩🇪 Германия #22 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 95.129.236.149
-  port: 443
-  uuid: 2652d057-e4e1-40ad-b583-0c559e93d3d7
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: d.nehtar.ru
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
-    headers:
-      Host: d.nehtar.ru
+    public-key: cIAvdh9g8o4OWaCs4yY1aKxz32F0N73O7kQpqp3oQHg
+    short-id: 9433bfa1
 - name: '🇮🇳 Индия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 95.143.188.113
+  server: in1.japancase.site
   port: 443
-  uuid: c47159bb-2c15-440d-b239-8594d7e7efbb
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: ios
+  servername: in1.japancase.site
+  skip-cert-verify: false
+  reality-opts:
+    public-key: lDBwW08dYwPP-7dVxYQ_clzfFwsDHLlclz9K2cEV6DM
+    short-id: df7b054cfc29800c
+- name: '🇪🇸 Испания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 156.252.229.203
+  port: 8443
+  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
+  udp: true
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: play.googleapis.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+    short-id: 974f7f8f
+- name: '🇪🇸 Испания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 79.182.39.122
+  port: 443
+  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
   udp: true
   network: grpc
   tls: true
-  client-fingerprint: safari
-  servername: ce3fp598gr.j.cloudfront.hls.edgehls.net
+  client-fingerprint: firefox
+  servername: 02104dg.es5.h1clayd.click
   skip-cert-verify: false
+  reality-opts:
+    public-key: AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI
+    short-id: 7d0aaf84998bfe61
   grpc-opts:
-    grpc-service-name: sync.v1
-- name: '🇪🇸 Испания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    grpc-service-name: af7e99c1e3f1
+- name: '🇪🇸 Испания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: e83786x.es5.h1clayd.click
+  server: 02104dg.es5.h1clayd.click
+  port: 443
+  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+  udp: true
+  network: grpc
+  tls: true
+  client-fingerprint: ios
+  servername: 02104dg.es5.h1clayd.click
+  skip-cert-verify: false
+  reality-opts:
+    public-key: AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI
+    short-id: 7d0aaf84998bfe61
+  grpc-opts:
+    grpc-service-name: af7e99c1e3f1
+- name: '🇪🇸 Испания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 79.182.39.122
   port: 443
   uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
   udp: true
@@ -772,22 +879,6 @@ proxies:
     path: /95630fba747e
     mode: auto
     host: e83786x.es5.h1clayd.click
-- name: '🇪🇸 Испания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 02104dg.es5.h1clayd.click
-  port: 443
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-  udp: true
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: 02104dg.es5.h1clayd.click
-  skip-cert-verify: false
-  reality-opts:
-    public-key: AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI
-    short-id: 7d0aaf84998bfe61
-  grpc-opts:
-    grpc-service-name: af7e99c1e3f1
 - name: '🇰🇿 Казахстан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 95.57.50.87
@@ -818,32 +909,6 @@ proxies:
   reality-opts:
     public-key: eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE
     short-id: 4000cdda6278d236
-- name: '🇰🇿 Казахстан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 95.143.188.113
-  port: 443
-  uuid: c47159bb-2c15-440d-b239-8594d7e7efbb
-  udp: true
-  network: grpc
-  tls: true
-  client-fingerprint: safari
-  servername: tz5gtjwlki.j.cloudfront.hls.hlsnode.net
-  skip-cert-verify: false
-  grpc-opts:
-    grpc-service-name: sync.v1
-- name: '🇰🇿 Казахстан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 95.143.188.113
-  port: 443
-  uuid: c47159bb-2c15-440d-b239-8594d7e7efbb
-  udp: true
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: tz5gtjwlki.j.cloudfront.hls.hlsnode.net
-  skip-cert-verify: false
-  grpc-opts:
-    grpc-service-name: sync.v1
 - name: '🇨🇦 Канада #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 185.218.17.172
@@ -853,7 +918,7 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: ios
   servername: canwec.kramiliantha.sbs
   skip-cert-verify: false
   reality-opts:
@@ -868,22 +933,40 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: ios
+  client-fingerprint: firefox
   servername: canwec.kramiliantha.sbs
   skip-cert-verify: false
   reality-opts:
     public-key: oTsYnjjxzyoBI2rJn0TjihgaOcNMPa9bNwHhp4RdDkg
     short-id: be7d0c9dda4dd4e6
+- name: '🇨🇾 Кипр #1 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 45.88.163.151
+  port: 443
+  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: api-finks.qikbro.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ZdeapR4mzvqtTCE0DVHg0dno5KByeuPtVil5qFx9pnA
+    short-id: 552156fb58afc262
+  xhttp-opts:
+    path: /assets/js/app.2f141051.js
+    mode: auto
+    host: api-finks.qikbro.com
 - name: '🇰🇷 Корея #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 3.39.4.109
-  port: 18967
+  port: 13672
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: ios
+  client-fingerprint: chrome
   servername: www.apple.com
   skip-cert-verify: false
   reality-opts:
@@ -907,7 +990,7 @@ proxies:
 - name: '🇰🇷 Корея #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 3.39.4.109
-  port: 13672
+  port: 18967
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   network: tcp
@@ -919,6 +1002,21 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
+- name: '🇰🇷 Корея #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 54.199.161.14
+  port: 20011
+  uuid: d016aa1b-1a84-4119-b50e-e94cacfb1bb3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: www.hsbc.com.hk
+  skip-cert-verify: false
+  reality-opts:
+    public-key: AouzBtI2FEHHMk_k_h-BZA53cAaffa0js3wmkA44qRc
+    short-id: 53b2fbfb
 - name: '🇱🇻 Латвия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 81.177.215.122
@@ -928,7 +1026,7 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   servername: latino.plus-hit.ru
   skip-cert-verify: false
   reality-opts:
@@ -936,22 +1034,19 @@ proxies:
     short-id: 7c8e3d4a9b1f26d3
 - name: '🇱🇹 Литва #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 5.199.174.25
+  server: 84.32.209.132
   port: 443
-  uuid: acc50200-7f21-4f90-9cca-0057efcbf042
+  uuid: 9f9c913b-0b78-4d14-a4db-560794cbc90f
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: aiartstudios.best
+  client-fingerprint: chrome
+  servername: litauto.plus-hit.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: DFR6MJcTN1bhukm7KS3IQSBDGPhTiPBwhZ3_brvwSlM
-    short-id: db724eb12631c05f
-  xhttp-opts:
-    path: /
-    mode: auto
-    host: aiartstudios.best
+    public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
+    short-id: 7c8e3d4a9b1f26d3
 - name: '🇱🇹 Литва #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 84.32.151.159
@@ -969,20 +1064,50 @@ proxies:
     short-id: d44d6d46
 - name: '🇱🇹 Литва #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 84.32.209.132
+  server: litauto.plus-hit.ru
   port: 443
   uuid: 9f9c913b-0b78-4d14-a4db-560794cbc90f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   servername: litauto.plus-hit.ru
   skip-cert-verify: false
   reality-opts:
     public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
     short-id: 7c8e3d4a9b1f26d3
-- name: '🇱🇹 Литва #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇱🇹 Литва #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: app26.betust.net
+  port: 443
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: app26.betust.net
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 5pR15ATlWW3tVzfnMN3xoiN56LjIUbhnOMp37ZvTFUc
+    short-id: d44d6d46
+- name: '🇱🇹 Литва #6 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: lorettmay.top
+  port: 443
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: lorettmay.top
+  skip-cert-verify: false
+  ws-opts:
+    path: /blog/posts
+    headers:
+      Host: lorettmay.top
+- name: '🇱🇹 Литва #7 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 5.199.174.25
   port: 443
@@ -1000,52 +1125,26 @@ proxies:
     path: /
     mode: auto
     host: aiartstudios.best
-- name: '🇱🇹 Литва #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇳🇱 Нидерланды #1 · 🌍 Блокировки'
   type: vless
-  server: litauto.plus-hit.ru
+  server: 188.114.98.0
   port: 443
-  uuid: 9f9c913b-0b78-4d14-a4db-560794cbc90f
+  uuid: 64c5f924-1c24-44a5-acff-2e3ebcd2f807
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: xhttp
   tls: true
-  client-fingerprint: ios
-  servername: litauto.plus-hit.ru
+  client-fingerprint: unsafe
+  servername: nl29.dr-ping.ir
+  alpn:
+  - h3
+  - h2
+  - http/1.1
   skip-cert-verify: false
-  reality-opts:
-    public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
-    short-id: 7c8e3d4a9b1f26d3
-- name: '🇱🇹 Литва #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: app26.betust.net
-  port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: app26.betust.net
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 5pR15ATlWW3tVzfnMN3xoiN56LjIUbhnOMp37ZvTFUc
-    short-id: d44d6d46
-- name: '🇱🇹 Литва #8 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: lorettmay.top
-  port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: lorettmay.top
-  skip-cert-verify: false
-  ws-opts:
-    path: /blog/posts
-    headers:
-      Host: lorettmay.top
-- name: '🇳🇱 Нидерланды #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  xhttp-opts:
+    path: /
+    mode: auto
+    host: nl29.dr-ping.ir
+- name: '🇳🇱 Нидерланды #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 50.7.193.133
   port: 443
@@ -1060,9 +1159,9 @@ proxies:
   reality-opts:
     public-key: oAX7soFKfN3xURgCD26trmjeF-e-eEjW3pBVXuuvW0k
     short-id: 77a8c8c8
-- name: '🇳🇱 Нидерланды #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇳🇱 Нидерланды #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 84.32.101.75
+  server: 84.32.101.116
   port: 443
   uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   udp: true
@@ -1070,12 +1169,12 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: app.betust.net
+  servername: api37.betust.net
   skip-cert-verify: false
   reality-opts:
-    public-key: xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo
-    short-id: ef5d4ad5
-- name: '🇳🇱 Нидерланды #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    public-key: 92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE
+    short-id: b7a5c406
+- name: '🇳🇱 Нидерланды #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 50.7.95.226
   port: 443
@@ -1090,11 +1189,71 @@ proxies:
   reality-opts:
     public-key: gJoMHh97teLxW92Z_3DI8qdSulqBlb9sW6mthYPEEBk
     short-id: d889ac17
-- name: '🇳🇱 Нидерланды #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇳🇱 Нидерланды #6 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 51.158.206.93
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: fuck.rkn
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: '🇳🇱 Нидерланды #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 84.32.101.116
+  port: 443
+  uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: api37.betust.net
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE
+    short-id: b7a5c406
+- name: '🇳🇱 Нидерланды #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: main.jarbook.net
+  port: 443
+  uuid: 95d0e214-eab0-4701-93ed-fea4f1b56062
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: main.jarbook.net
+  skip-cert-verify: false
+  reality-opts:
+    public-key: gJoMHh97teLxW92Z_3DI8qdSulqBlb9sW6mthYPEEBk
+    short-id: d889ac17
+- name: '🇳🇱 Нидерланды #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: prime.jarbook.net
+  port: 443
+  uuid: 95d0e214-eab0-4701-93ed-fea4f1b56062
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: prime.jarbook.net
+  skip-cert-verify: false
+  reality-opts:
+    public-key: oAX7soFKfN3xURgCD26trmjeF-e-eEjW3pBVXuuvW0k
+    short-id: 77a8c8c8
+- name: '🇳🇱 Нидерланды #10 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 84.32.101.75
   port: 443
-  uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   udp: true
   network: tcp
   flow: xtls-rprx-vision
@@ -1105,66 +1264,96 @@ proxies:
   reality-opts:
     public-key: xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo
     short-id: ef5d4ad5
-- name: '🇳🇱 Нидерланды #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇳🇱 Нидерланды #11 · 🤖 ИИ · 🌍 Блокировки'
   type: vless
-  server: 84.32.101.116
+  server: fr.golangwikito.cfd
   port: 443
-  uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: api37.betust.net
+  client-fingerprint: qq
+  servername: fr.golangwikito.cfd
   skip-cert-verify: false
   reality-opts:
-    public-key: 92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE
-    short-id: b7a5c406
-- name: '🇳🇱 Нидерланды #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
+    short-id: e6d589857d1cec5e
+- name: '🇳🇱 Нидерланды #12 · 🤖 ИИ · 🌍 Блокировки'
   type: vless
-  server: 50.7.176.65
+  server: fr.golangwikito.cfd
   port: 443
-  uuid: 3bb97d46-789b-4229-88f6-9beb222a4137
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: smart2.khinikadze.com
+  client-fingerprint: safari
+  servername: fr.golangwikito.cfd
   skip-cert-verify: false
   reality-opts:
-    public-key: lIZbI6KG18rkVDyMhLo7e6KvmffxR6fvFNzzC-O9vT8
-    short-id: ''
-- name: '🇳🇱 Нидерланды #7 · 🌍 Блокировки · 📶 Белые списки'
+    public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
+    short-id: e6d589857d1cec5e
+- name: '🇳🇱 Нидерланды #13 · 🌍 Блокировки'
   type: vless
-  server: 188.116.27.6
+  server: 104.18.151.231
   port: 443
-  uuid: f3d543c5-f41b-46d7-85f8-d6f3ccefe280
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
   client-fingerprint: chrome
-  servername: www.sony.co.uk
+  servername: jolly-silence-83b2.kidat76098.workers.dev
   skip-cert-verify: false
-  reality-opts:
-    public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
-    short-id: '1174'
-- name: '🇳🇱 Нидерланды #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  ws-opts:
+    path: /ws
+    headers:
+      Host: jolly-silence-83b2.kidat76098.workers.dev
+- name: '🇳🇱 Нидерланды #14 · 🌍 Блокировки'
   type: vless
-  server: 84.32.101.116
+  server: 104.18.151.231
   port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  client-fingerprint: firefox
-  servername: api37.betust.net
+  client-fingerprint: chrome
+  servername: hidden-star-98c5.tebohi79684008.workers.dev
   skip-cert-verify: false
-  reality-opts:
-    public-key: 92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE
-    short-id: b7a5c406
+  ws-opts:
+    path: /ws
+    headers:
+      Host: hidden-star-98c5.tebohi79684008.workers.dev
+- name: '🇳🇱 Нидерланды #15 · 🌍 Блокировки'
+  type: vless
+  server: 104.18.151.231
+  port: 443
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: delicate-hall-bf16.vpndkah.workers.dev
+  skip-cert-verify: false
+  ws-opts:
+    path: /ws
+    headers:
+      Host: delicate-hall-bf16.vpndkah.workers.dev
+- name: '🇳🇱 Нидерланды #16 · 🌍 Блокировки'
+  type: vless
+  server: 104.18.151.231
+  port: 443
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: workers.jijew83195.workers.dev
+  skip-cert-verify: false
+  ws-opts:
+    path: /ws
+    headers:
+      Host: workers.jijew83195.workers.dev
 - name: '🇵🇱 Польша #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 177.3.252.83
@@ -1180,118 +1369,37 @@ proxies:
   reality-opts:
     public-key: 5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM
     short-id: 0c774b50
-- name: '🇵🇱 Польша #2 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇵🇱 Польша #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 144.31.248.71
+  server: 138.124.64.236
   port: 443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: nl2-edge.gacvpn.site
+  servername: pl3.japancase.site
   skip-cert-verify: false
-  ws-opts:
-    path: /static/js/vendor.8a967130.js?ed=2048
-    headers:
-      Host: nl2-edge.gacvpn.site
-- name: '🇵🇱 Польша #3 · 🌍 Блокировки · 📶 Белые списки'
+  reality-opts:
+    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
+    short-id: 5037f0423dc4e4ff
+- name: '🇵🇱 Польша #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 144.31.248.71
+  server: pl3.japancase.site
   port: 443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: nl2-edge.gacvpn.site
-  skip-cert-verify: false
-  ws-opts:
-    path: /static/js/vendor.8a967130.js?ed=2048
-    headers:
-      Host: nl2-edge.gacvpn.site
-- name: '🇵🇱 Польша #4 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: nl2-edge.gacvpn.site
-  port: 443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
   client-fingerprint: chrome
-  servername: nl2-edge.gacvpn.site
+  servername: pl3.japancase.site
   skip-cert-verify: false
-  ws-opts:
-    path: /static/js/vendor.8a967130.js?ed=2048
-    headers:
-      Host: nl2-edge.gacvpn.site
+  reality-opts:
+    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
+    short-id: 5037f0423dc4e4ff
 - name: '🇵🇱 Польша #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 194.156.26.125
-  port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 186.baklajann.ru
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 186.baklajann.ru
-- name: '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 194.156.26.125
-  port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 186.baklajann.ru
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 186.baklajann.ru
-- name: '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 192.200.160.122
-  port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 51.baklajann.ru
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 51.baklajann.ru
-- name: '🇵🇱 Польша #8 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 192.71.82.14
-  port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 51.baklajann.ru
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 51.baklajann.ru
-- name: '🇵🇱 Польша #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 13.143.167.154
   port: 443
@@ -1306,36 +1414,83 @@ proxies:
   reality-opts:
     public-key: Y2uyTCt5ofoFht6Xl-55dBPCBUiYi1fFTVcmZtoiqFw
     short-id: ''
-- name: '🇵🇱 Польша #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 192.200.160.122
+  server: pl-balancer.peregrine-sub.net
   port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 51.baklajann.ru
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 51.baklajann.ru
-- name: '🇷🇴 Румыния #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 212.193.0.105
-  port: 443
-  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
+  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: cdn-rum-keno-prsv.keno.su
+  client-fingerprint: chrome
+  servername: pl-balancer.peregrine-sub.net
   skip-cert-verify: false
   reality-opts:
-    public-key: Cw04nkURk7InPCPZl-0PovP44rh5o74dMHBUFOsjFig
-    short-id: a1b2c3d4e5f60718
+    public-key: Y2uyTCt5ofoFht6Xl-55dBPCBUiYi1fFTVcmZtoiqFw
+    short-id: ''
+- name: '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 185.86.147.175
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: safari
+  servername: bhjolq0d0l.flowersgood.top
+  skip-cert-verify: false
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
+- name: '🇵🇱 Польша #8 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: nl2-edge.gacvpn.site
+  port: 443
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: safari
+  servername: nl2-edge.gacvpn.site
+  skip-cert-verify: false
+  ws-opts:
+    path: /static/js/vendor.8a967130.js?ed=2048
+    headers:
+      Host: nl2-edge.gacvpn.site
+- name: '🇵🇱 Польша #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 144.31.248.71
+  port: 443
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: nl2-edge.gacvpn.site
+  skip-cert-verify: false
+  ws-opts:
+    path: /static/js/vendor.8a967130.js
+    headers:
+      Host: nl2-edge.gacvpn.site
+- name: '🇷🇴 Румыния #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: static.bakarova-top.ru
+  alpn:
+  - h2
+  skip-cert-verify: false
+  xhttp-opts:
+    path: /api/v2/events
+    mode: auto
+    host: static.bakarova-top.ru
 - name: '🇷🇴 Румыния #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 185.178.208.140
@@ -1344,15 +1499,13 @@ proxies:
   udp: true
   network: xhttp
   tls: true
-  client-fingerprint: edge
-  servername: static.bakarova-top.ru
-  alpn:
-  - h2
+  client-fingerprint: firefox
+  servername: api.bakarova-top.ru
   skip-cert-verify: false
   xhttp-opts:
     path: /api/v2/events
     mode: packet-up
-    host: static.bakarova-top.ru
+    host: api.bakarova-top.ru
 - name: '🇷🇴 Румыния #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 185.178.208.140
@@ -1366,9 +1519,24 @@ proxies:
   skip-cert-verify: false
   xhttp-opts:
     path: /api/v2/events
-    mode: auto
+    mode: packet-up
     host: static.bakarova-top.ru
 - name: '🇷🇴 Румыния #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: api.bakarova-top.ru
+  skip-cert-verify: false
+  xhttp-opts:
+    path: /api/v2/events
+    mode: auto
+    host: api.bakarova-top.ru
+- name: '🇷🇴 Румыния #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -1381,90 +1549,41 @@ proxies:
   skip-cert-verify: false
   xhttp-opts:
     path: /api/v2/events
+    mode: auto
+    host: static.bakarova-top.ru
+- name: '🇷🇴 Румыния #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: static.bakarova-top.ru
+  skip-cert-verify: false
+  xhttp-opts:
+    path: /api/v2/events
+    mode: auto
+    host: static.bakarova-top.ru
+- name: '🇷🇴 Румыния #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  network: xhttp
+  tls: true
+  client-fingerprint: safari
+  servername: static.bakarova-top.ru
+  alpn:
+  - h2
+  skip-cert-verify: false
+  xhttp-opts:
+    path: /api/v2/events
     mode: packet-up
     host: static.bakarova-top.ru
 - name: '🇺🇸 США #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 198.2.251.107
-  port: 45197
-  uuid: 9d979dd1-1760-4c76-8881-b05a09b4d795
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: chrome
-  servername: www.amazon.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: LqXTJ-JXo1CgjUQT8trI3OEhY2qOr1YAin2YLuLZFx0
-    short-id: ''
-- name: '🇺🇸 США #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 195.123.240.65
-  port: 443
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
-- name: '🇺🇸 США #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 8.35.211.73
-  port: 2087
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: d39333476.pages.dev
-  skip-cert-verify: false
-  ws-opts:
-    path: /resource
-    headers:
-      Host: d39333476.pages.dev
-- name: '🇺🇸 США #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 162.35.102.51
-  port: 443
-  uuid: acc50200-7f21-4f90-9cca-0057efcbf042
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: bridgestone.best
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 7T1P1SUjOmgdvYnEyjnBxeo0pI3ilNgY8DPxC3y-6w0
-    short-id: a7d31f9c82e64b50
-  xhttp-opts:
-    path: /
-    mode: auto
-    host: bridgestone.best
-- name: '🇺🇸 США #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 162.35.102.51
-  port: 443
-  uuid: acc50200-7f21-4f90-9cca-0057efcbf042
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: bridgestone.best
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 7T1P1SUjOmgdvYnEyjnBxeo0pI3ilNgY8DPxC3y-6w0
-    short-id: a7d31f9c82e64b50
-  xhttp-opts:
-    path: /
-    mode: auto
-    host: bridgestone.best
-- name: '🇺🇸 США #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 67.220.73.204
   port: 18662
@@ -1479,51 +1598,108 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
-- name: '🇺🇸 США #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇺🇸 США #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: us2.qik-fin.uk
-  port: 443
-  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
+  server: 67.220.73.204
+  port: 16016
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: qq
-  servername: us2.qik-fin.uk
-  alpn:
-  - h2
-  skip-cert-verify: false
-  xhttp-opts:
-    path: /static/js/chunk
-    mode: stream-one
-    host: us2.qik-fin.uk
-- name: '🇺🇸 США #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 45.86.68.224
-  port: 443
-  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
-  udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: uskaa.qikbro.com
+  servername: www.apple.com
   skip-cert-verify: false
   reality-opts:
-    public-key: itK6ubRv1Mr9EBm0Udnd1kUmYfttcvXuF27anXbaH34
-    short-id: 7ebd2a1b9316c4ce
-  xhttp-opts:
-    path: /assets/js/app.870de6c4.js
-    mode: stream-one
-    host: uskaa.qikbro.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+- name: '🇺🇸 США #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    short-id: ''
+- name: '🇺🇸 США #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    short-id: ''
+- name: '🇺🇸 США #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    short-id: ''
+- name: '🇺🇸 США #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    short-id: ''
+- name: '🇺🇸 США #9 · 🌍 Блокировки'
+  type: vless
+  server: 104.21.58.37
+  port: 2053
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: android
+  servername: fast.145779.xyz
+  skip-cert-verify: false
+  ws-opts:
+    path: /ws-tesla
+    headers:
+      Host: fast.145779.xyz
 - name: '🇺🇸 США #10 · 🌍 Блокировки'
   type: vless
-  server: fast.145779.xyz
+  server: 104.21.58.37
   port: 2053
   uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
   udp: true
   network: ws
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: safari
   servername: fast.145779.xyz
+  alpn:
+  - http/1.1
   skip-cert-verify: false
   ws-opts:
     path: /ws-tesla
@@ -1537,39 +1713,38 @@ proxies:
   udp: true
   network: ws
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   servername: fast.145779.xyz
   skip-cert-verify: false
   ws-opts:
     path: /ws-tesla
     headers:
       Host: fast.145779.xyz
-- name: '🇺🇸 США #12 · 🤖 ИИ · 🌍 Блокировки'
+- name: '🇺🇸 США #12 · 🌍 Блокировки'
   type: vless
-  server: parvaz.zqpm.ir
-  port: 20753
-  uuid: 92b368fe-8991-4345-a726-b512ba6da8da
-  udp: true
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: PF8LdirtBEOQ_w9-1-i3mhgeFYbIQ1iOu1FPCfxUHQo
-    short-id: 2efbb0033df59520
-- name: '🇺🇸 США #13 · 🌍 Блокировки'
-  type: vless
-  server: 104.21.58.37
+  server: fast.145779.xyz
   port: 2053
-  uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
   udp: true
   network: ws
   tls: true
-  client-fingerprint: safari
+  client-fingerprint: qq
   servername: fast.145779.xyz
-  alpn:
-  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /ws-tesla
+    headers:
+      Host: fast.145779.xyz
+- name: '🇺🇸 США #13 · 🌍 Блокировки'
+  type: vless
+  server: fast.145779.xyz
+  port: 2053
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: fast.145779.xyz
   skip-cert-verify: false
   ws-opts:
     path: /ws-tesla
@@ -1577,6 +1752,21 @@ proxies:
       Host: fast.145779.xyz
 - name: '🇺🇸 США #14 · 🌍 Блокировки'
   type: vless
+  server: fast.145779.xyz
+  port: 2053
+  uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: fast.145779.xyz
+  skip-cert-verify: false
+  ws-opts:
+    path: /ws-tesla
+    headers:
+      Host: fast.145779.xyz
+- name: '🇺🇸 США #15 · 🌍 Блокировки'
+  type: vless
   server: 172.67.199.126
   port: 2053
   uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
@@ -1592,99 +1782,7 @@ proxies:
     path: /ws-tesla
     headers:
       Host: fast.145779.xyz
-- name: '🇺🇸 США #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: qq
-  servername: static.bakarova-top.ru
-  skip-cert-verify: false
-  xhttp-opts:
-    path: /api/v2/events
-    mode: auto
-    host: static.bakarova-top.ru
-- name: '🇺🇸 США #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: chrome
-  servername: api.bakarova-top.ru
-  skip-cert-verify: false
-  xhttp-opts:
-    path: /api/v2/events
-    mode: auto
-    host: api.bakarova-top.ru
-- name: '🇺🇸 США #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: chrome
-  servername: static.bakarova-top.ru
-  alpn:
-  - h2
-  skip-cert-verify: false
-  xhttp-opts:
-    path: /api/v2/events
-    mode: auto
-    host: static.bakarova-top.ru
-- name: '🇺🇸 США #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.bakarova-top.ru
-  skip-cert-verify: false
-  xhttp-opts:
-    path: /api/v2/events
-    mode: packet-up
-    host: api.bakarova-top.ru
-- name: '🇺🇸 США #19 · 🌍 Блокировки'
-  type: vless
-  server: fast.145779.xyz
-  port: 2053
-  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: qq
-  servername: fast.145779.xyz
-  skip-cert-verify: false
-  ws-opts:
-    path: /ws-tesla
-    headers:
-      Host: fast.145779.xyz
-- name: '🇺🇸 США #20 · 🌍 Блокировки'
-  type: vless
-  server: fast.145779.xyz
-  port: 2053
-  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: fast.145779.xyz
-  skip-cert-verify: false
-  ws-opts:
-    path: /ws-tesla
-    headers:
-      Host: fast.145779.xyz
-- name: '🇺🇸 США #21 · 🌍 Блокировки'
+- name: '🇺🇸 США #16 · 🌍 Блокировки'
   type: vless
   server: 172.67.199.126
   port: 2053
@@ -1699,563 +1797,7 @@ proxies:
     path: /ws-tesla
     headers:
       Host: fast.145779.xyz
-- name: '🇺🇸 США #22 · 🌍 Блокировки'
-  type: vless
-  server: 104.21.58.37
-  port: 2053
-  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: android
-  servername: fast.145779.xyz
-  skip-cert-verify: false
-  ws-opts:
-    path: /ws-tesla
-    headers:
-      Host: fast.145779.xyz
-- name: '🇺🇸 США #23 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 45.143.94.91
-  port: 8443
-  uuid: 3837e7a5-d40e-4b85-8700-5f9725a5a2cb
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: chrome
-  servername: us1.cloudvienta.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 3Kgy_0tHtOzEn9_mEylNsBVlAHNngT6S4AuYy5wEOSU
-    short-id: 0c37b64d1935ebc1
-- name: '🇸🇬 Сингапур #1 · 🌍 Блокировки'
-  type: vless
-  server: news.zoom.us
-  port: 2087
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: free.vkehi.store
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: free.vkehi.store
-- name: '🇸🇬 Сингапур #2 · 🌍 Блокировки'
-  type: vless
-  server: news.zoom.us
-  port: 2087
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: qq
-  servername: free.vkehi.store
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: free.vkehi.store
-- name: '🇸🇬 Сингапур #3 · 🌍 Блокировки'
-  type: vless
-  server: 104.21.236.63
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #4 · 🌍 Блокировки'
-  type: vless
-  server: 104.24.11.68
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #5 · 🌍 Блокировки'
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #6 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.17.117.137
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #7 · 🌍 Блокировки'
-  type: vless
-  server: 104.18.26.90
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: android
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #8 · 🌍 Блокировки'
-  type: vless
-  server: 104.19.32.166
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #9 · 🌍 Блокировки'
-  type: vless
-  server: 104.21.5.75
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #10 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.191
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #11 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #12 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.100
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #13 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 3.0.111.82
-  port: 12972
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-- name: '🇸🇬 Сингапур #14 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.156.227
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: safari
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #15 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.189
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #16 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #17 · 🌍 Блокировки'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #18 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 54.251.9.130
-  port: 24146
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: random
-  servername: www.intel.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-- name: '🇸🇬 Сингапур #19 · 🌍 Блокировки'
-  type: vless
-  server: 104.17.108.213
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: ios
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #20 · 🌍 Блокировки'
-  type: vless
-  server: 172.67.166.188
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #21 · 🌍 Блокировки'
-  type: vless
-  server: 8.35.211.242
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: safari
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #22 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.116
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #23 · 🌍 Блокировки'
-  type: vless
-  server: vpn.cintaku.qzz.io
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #24 · 🌍 Блокировки'
-  type: vless
-  server: vpn.cintaku.qzz.io
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-- name: '🇸🇬 Сингапур #25 · 🌍 Блокировки'
-  type: vless
-  server: 104.17.11.191
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #26 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.111.193
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #27 · 🌍 Блокировки'
-  type: vless
-  server: 104.21.91.49
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #28 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 178.94.25.73
-  port: 10444
-  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: safari
-  servername: video.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-- name: '🇸🇬 Сингапур #29 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.103
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #30 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.198
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #31 · 🌍 Блокировки'
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #32 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: vpn.cintaku.qzz.io
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: '🇸🇬 Сингапур #33 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #34 · 🌍 Блокировки'
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: ios
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #35 · 🌍 Блокировки'
-  type: vless
-  server: news.zoom.us
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #36 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇸🇬 Сингапур #1 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 3.0.111.82
   port: 17623
@@ -2270,187 +1812,52 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
-- name: '🇸🇬 Сингапур #37 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇸🇬 Сингапур #2 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 185.174.137.106
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #38 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.3.98
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #39 · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.117
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #40 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #41 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.19.178.244
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: android
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #42 · 🌍 Блокировки'
-  type: vless
-  server: 104.24.0.184
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: ios
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #43 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.10
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #44 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.16.10.235
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #45 · 🌍 Блокировки'
-  type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: qq
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #46 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 104.21.60.109
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇬 Сингапур #47 · 🌍 Блокировки'
-  type: vless
-  server: 104.21.89.41
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: safari
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: '🇸🇮 Словения #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 92.42.201.155
-  port: 14443
-  uuid: a60da2ca-0abf-49f8-9dcb-156989d76ad2
+  server: 54.251.9.130
+  port: 24146
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: node-slo04.rkitman.ru
+  client-fingerprint: random
+  servername: www.intel.com
   skip-cert-verify: false
   reality-opts:
-    public-key: mGTe1s-luknrPURs4KI4fjdCXZAq03f_-b7by6Dr-CI
-    short-id: e204defc87a8949e
-- name: '🇸🇮 Словения #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+- name: '🇸🇬 Сингапур #3 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 3.0.111.82
+  port: 12972
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+- name: '🇸🇬 Сингапур #4 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 43.163.112.174
+  port: 443
+  uuid: 0dedd47d-47b9-4ed1-9c9f-cbeecad57a68
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg
+    short-id: 0123456789abcdef
+- name: '🇸🇮 Словения #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 92.42.201.160
   port: 14443
@@ -2465,67 +1872,37 @@ proxies:
   reality-opts:
     public-key: fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY
     short-id: e013fa99a81badcc
-- name: '🇹🇼 Тайвань #1 · 🤖 ИИ · 🌍 Блокировки'
+- name: '🇸🇮 Словения #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 172.67.165.32
-  port: 8443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  server: 92.42.201.155
+  port: 14443
+  uuid: a60da2ca-0abf-49f8-9dcb-156989d76ad2
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: chrome
-  servername: n04.jinggai.online
+  client-fingerprint: ios
+  servername: node-slo04.rkitman.ru
   skip-cert-verify: false
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- name: '🇹🇼 Тайвань #2 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: n04.jinggai.online
-  port: 8443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: n04.jinggai.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- name: '🇹🇼 Тайвань #3 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: n04.jinggai.online
-  port: 8443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: n04.jinggai.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- name: '🇹🇼 Тайвань #4 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: n04.jinggai.online
-  skip-cert-verify: false
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
+  reality-opts:
+    public-key: mGTe1s-luknrPURs4KI4fjdCXZAq03f_-b7by6Dr-CI
+    short-id: e204defc87a8949e
 - name: '🇹🇷 Турция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 147.45.66.62
+  port: 443
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: tr3.japancase.site
+  skip-cert-verify: false
+  reality-opts:
+    public-key: B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM
+    short-id: 071c3bd86b0c3c73
+- name: '🇹🇷 Турция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 62.133.63.45
   port: 8444
@@ -2533,50 +1910,29 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   servername: github.com
   skip-cert-verify: false
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
+    short-id: ''
   grpc-opts:
     grpc-service-name: GunService
-- name: '🇹🇷 Турция #2 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 62.60.233.156
-  port: 2087
-  uuid: 02fe4e97-8aac-4117-bcd8-3575f73dd26a
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: qq
-  servername: connect-real-tr.trueweb.app
-  skip-cert-verify: false
-  reality-opts:
-    public-key: iLIqDocanm2WQJ5fdyCLI1qdprEKaI2bTLArVPHgXlE
-    short-id: ''
-  xhttp-opts:
-    path: /xhttp
-    mode: auto
-    host: connect-real-tr.trueweb.app
 - name: '🇹🇷 Турция #3 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 62.60.233.156
-  port: 2087
-  uuid: 02fe4e97-8aac-4117-bcd8-3575f73dd26a
+  server: 198.105.123.233
+  port: 443
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: connect-real-tr.trueweb.app
+  servername: tr1.japancase.site
   skip-cert-verify: false
   reality-opts:
-    public-key: iLIqDocanm2WQJ5fdyCLI1qdprEKaI2bTLArVPHgXlE
-    short-id: ''
-  xhttp-opts:
-    path: /xhttp
-    mode: auto
-    host: connect-real-tr.trueweb.app
+    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
+    short-id: 41ae8e266bc3346f
 - name: '🇺🇿 Узбекистан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 46.8.114.205
@@ -2601,39 +1957,43 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: ios
+  client-fingerprint: firefox
   servername: plov.plus-hit.ru
   skip-cert-verify: false
   reality-opts:
     public-key: QsUgVxHyjCKdtYBnBGoEM74F3k9uc2kimLPbf_qAAAM
     short-id: bf8b003cb32c968b
-- name: '🇺🇿 Узбекистан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇫🇮 Финляндия #1 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 95.143.188.113
+  server: 31.77.138.193
   port: 443
-  uuid: c47159bb-2c15-440d-b239-8594d7e7efbb
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   udp: true
-  network: grpc
-  tls: true
-  client-fingerprint: safari
-  servername: ar5v3uc2o9.j.cloudfront.hls.hlsnode.net
-  skip-cert-verify: false
-  grpc-opts:
-    grpc-service-name: sync.v1
-- name: '🇺🇿 Узбекистан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 95.143.188.113
-  port: 443
-  uuid: c47159bb-2c15-440d-b239-8594d7e7efbb
-  udp: true
-  network: grpc
+  network: ws
   tls: true
   client-fingerprint: firefox
-  servername: ar5v3uc2o9.j.cloudfront.hls.hlsnode.net
+  servername: msk2.gacvpn.site
   skip-cert-verify: false
-  grpc-opts:
-    grpc-service-name: sync.v1
-- name: '🇫🇮 Финляндия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  ws-opts:
+    path: /static/js/app.5b8e2c41.js
+    headers:
+      Host: msk2.gacvpn.site
+- name: '🇫🇮 Финляндия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 31.77.138.193
+  port: 443
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: msk2.gacvpn.site
+  skip-cert-verify: false
+  ws-opts:
+    path: /static/js/app.5b8e2c41.js?ed=2048
+    headers:
+      Host: msk2.gacvpn.site
+- name: '🇫🇮 Финляндия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 31.76.103.92
   port: 443
@@ -2642,144 +2002,76 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: ios
   servername: fi.peregrine-sub.net
   skip-cert-verify: false
   reality-opts:
     public-key: Y2uyTCt5ofoFht6Xl-55dBPCBUiYi1fFTVcmZtoiqFw
     short-id: ''
-- name: '🇫🇮 Финляндия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇫🇮 Финляндия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: swedenafteraventura.space
+  server: fi.peregrine-sub.net
   port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: ios
+  servername: fi.peregrine-sub.net
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Y2uyTCt5ofoFht6Xl-55dBPCBUiYi1fFTVcmZtoiqFw
+    short-id: ''
+- name: '🇫🇮 Финляндия #5 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 84.38.184.126
+  port: 2089
+  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
+  udp: true
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s3.storage.selcloud.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 4Ba7EKm90gUC57U-0WtkSVXgmeLzR9TG5Qw3dqgjbDQ
+    short-id: c1db0a1b
+  grpc-opts:
+    grpc-service-name: cas-fi
+- name: '🇫🇷 Франция #1 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: edge.bookmai.com
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: chrome
-  servername: swedenafteraventura.space
+  servername: mother-earth.fyi
   skip-cert-verify: false
   reality-opts:
-    public-key: TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: ''
-- name: '🇫🇮 Финляндия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 201.58.177.183
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: swedenafteraventura.space
-  skip-cert-verify: false
-  reality-opts:
-    public-key: TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY
-    short-id: ''
-- name: '🇫🇮 Финляндия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: fl3.nexfile.net
-  port: 4443
-  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: fl3.nexfile.net
-  skip-cert-verify: false
-  xhttp-opts:
-    path: /api/v1/sync/
-    mode: auto
-    host: fl3.nexfile.net
-- name: '🇫🇮 Финляндия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 204.168.135.161
-  port: 8443
-  uuid: 8e665b34-32ee-4d2f-a240-4f80a74751cc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: 360.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: OQtjO7JAJZLjmTb7QBpEODeX6Vhzs20XTgFUAyrR1BQ
-    short-id: 7366b647f51921e0
-- name: '🇫🇮 Финляндия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 45.88.163.49
-  port: 443
-  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: finskayyy.qikbro.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: GxworJcCmPev82bpbJLAsbVtCo29Kq2z7vzV-bi1RmY
-    short-id: b9828cf6d9e95772
-  xhttp-opts:
-    path: /assets/js/app.ee8d209e.js
-    mode: stream-one
-    host: finskayyy.qikbro.com
-- name: '🇫🇮 Финляндия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 45.88.163.49
-  port: 443
-  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: finskayyy.qikbro.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: GxworJcCmPev82bpbJLAsbVtCo29Kq2z7vzV-bi1RmY
-    short-id: b9828cf6d9e95772
-  xhttp-opts:
-    path: /assets/js/app.ee8d209e.js
-    mode: auto
-    host: finskayyy.qikbro.com
-- name: '🇫🇷 Франция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 143.246.211.240
-  port: 443
-  uuid: 11512726-b692-406f-ab49-7b28f44a8294
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: fr.gorobsub.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: _LNT4Kf7pPmeEBAnmJ7xsBu3y6Kih0Ew9AFVoDa3QSg
-    short-id: 3242cfd7
-  xhttp-opts:
-    path: /ae1b809ceb77
-    mode: auto
-    host: fr.gorobsub.com
 - name: '🇫🇷 Франция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 143.246.211.240
+  server: 82.148.255.53
   port: 443
-  uuid: 11512726-b692-406f-ab49-7b28f44a8294
+  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
   udp: true
   network: xhttp
   tls: true
   client-fingerprint: firefox
-  servername: fr.gorobsub.com
+  servername: fraceee.qikbro.com
   skip-cert-verify: false
   reality-opts:
-    public-key: _LNT4Kf7pPmeEBAnmJ7xsBu3y6Kih0Ew9AFVoDa3QSg
-    short-id: ''
+    public-key: 0hI8gffvrad6AN41MZnEhEp5al31P_BZLnJe38P71R8
+    short-id: 3874010ae4612548
   xhttp-opts:
-    path: /ae1b809ceb77
+    path: /assets/js/app.15026f72.js
     mode: auto
-    host: fr.gorobsub.com
+    host: fraceee.qikbro.com
 - name: '🇫🇷 Франция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 143.246.211.240
@@ -2788,7 +2080,7 @@ proxies:
   udp: true
   network: xhttp
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: ios
   servername: fr.gorobsub.com
   skip-cert-verify: false
   reality-opts:
@@ -2800,152 +2092,25 @@ proxies:
     host: fr.gorobsub.com
 - name: '🇫🇷 Франция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 82.148.255.83
+  server: 82.148.255.53
   port: 443
-  uuid: ccb8ff48-3934-4250-b4ec-bb76b95d154f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: fr1.fox-lisa.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs
-    short-id: 027af64166562b09
-- name: '🇫🇷 Франция #5 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 212.183.88.53
-  port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 19.baklajann.ru
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 19.baklajann.ru
-- name: '🇫🇷 Франция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 82.148.255.201
-  port: 443
-  uuid: 49fdd350-6ffb-4343-b467-14e269bb95de
+  uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
   udp: true
   network: xhttp
   tls: true
   client-fingerprint: firefox
-  servername: 360.yandex.ru
+  servername: fraceee.qikbro.com
   skip-cert-verify: false
   reality-opts:
-    public-key: DvNpCmas0_0MO91s70vlkAxZxnnIt1NE0zqCC4trURQ
-    short-id: 2bf10fc0a85601e5
+    public-key: 0hI8gffvrad6AN41MZnEhEp5al31P_BZLnJe38P71R8
+    short-id: 3874010ae4612548
   xhttp-opts:
-    path: /vless-xhttp
-    mode: auto
-    host: 360.yandex.ru
-- name: '🇫🇷 Франция #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 212.183.88.53
-  port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 19.baklajann.ru
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 19.baklajann.ru
-- name: '🇫🇷 Франция #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 82.148.255.201
-  port: 8443
-  uuid: 49fdd350-6ffb-4343-b467-14e269bb95de
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: 360.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: DvNpCmas0_0MO91s70vlkAxZxnnIt1NE0zqCC4trURQ
-    short-id: 2bf10fc0a85601e5
-- name: '🇫🇷 Франция #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: fr1.fox-lisa.ru
-  port: 443
-  uuid: ccb8ff48-3934-4250-b4ec-bb76b95d154f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: ios
-  servername: fr1.fox-lisa.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs
-    short-id: 027af64166562b09
-- name: '🇫🇷 Франция #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 82.148.255.201
-  port: 443
-  uuid: 49fdd350-6ffb-4343-b467-14e269bb95de
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: 360.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: DvNpCmas0_0MO91s70vlkAxZxnnIt1NE0zqCC4trURQ
-    short-id: 2bf10fc0a85601e5
-  xhttp-opts:
-    path: /vless-xhttp
-    mode: auto
-    host: 360.yandex.ru
-- name: '🇫🇷 Франция #11 · 🤖 ИИ · 🌍 Блокировки'
-  type: vless
-  server: 52.222.184.99
-  port: 443
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: d1m31xp31bswc2.cloudfront.net
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: d1m31xp31bswc2.cloudfront.net
-- name: '🇨🇿 Чехия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 195.123.245.241
-  port: 443
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: gateway.icloud.com
-  skip-cert-verify: false
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
+    path: /assets/js/app.15026f72.js
+    mode: stream-one
+    host: fraceee.qikbro.com
 - name: '🇨🇭 Швейцария #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 179.43.166.190
+  server: 46.19.138.214
   port: 443
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
@@ -2958,9 +2123,53 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-- name: '🇨🇭 Швейцария #2 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇨🇭 Швейцария #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: ch-ws.gacvpn.site
+  server: prvtch.titun.su
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: perevodchiki.su
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+- name: '🇨🇭 Швейцария #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: www.apple.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+- name: '🇨🇭 Швейцария #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 179.43.166.190
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: perevodchiki.su
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+- name: '🇨🇭 Швейцария #5 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 143.246.202.86
   port: 993
   uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   udp: true
@@ -2973,38 +2182,37 @@ proxies:
     path: /static/js/vendor.4fd8db0d.js?ed=2048
     headers:
       Host: ch-ws.gacvpn.site
-- name: '🇨🇭 Швейцария #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇨🇭 Швейцария #6 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: prvtch.titun.su
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  server: 143.246.202.86
+  port: 993
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: ch-ws.gacvpn.site
+  skip-cert-verify: false
+  ws-opts:
+    path: /static/js/vendor.4fd8db0d.js
+    headers:
+      Host: ch-ws.gacvpn.site
+- name: '🇸🇪 Швеция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 84.32.154.46
+  port: 1432
+  uuid: 109852f2-4591-498c-9a96-f1d9206ce804
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: perevodchiki.su
+  servername: www.dhl.de
   skip-cert-verify: false
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-- name: '🇸🇪 Швеция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 83.141.67.164
-  port: 8444
-  uuid: f4ef1d6a-8f01-4ccd-8547-5b5a2a572d00
-  udp: true
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: 360.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: qUq7a-iukyszVvH-5C74VBujzYAMC_shfv8O-1crZlY
-    short-id: 09fd8f6666eec544
-  grpc-opts:
-    grpc-service-name: grpc-reality
-- name: '🇸🇪 Швеция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
+    short-id: 4ea6a183
+- name: '🇸🇪 Швеция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: swdnode.barnikle1.me
   port: 1432
@@ -3013,56 +2221,13 @@ proxies:
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: ios
   servername: www.dhl.de
   skip-cert-verify: false
   reality-opts:
     public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
     short-id: 4ea6a183
-- name: '🇸🇪 Швеция #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 138.124.86.230
-  port: 48115
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  udp: true
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: '🇸🇪 Швеция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 157.22.190.220
-  port: 2053
-  uuid: 7c03538c-c6dd-4dc1-b35c-5fc0e2a43271
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 666-7sf.pages.dev
-  skip-cert-verify: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 666-7sf.pages.dev
-- name: '🇸🇪 Швеция #7 · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 83.141.67.164
-  port: 8443
-  uuid: f4ef1d6a-8f01-4ccd-8547-5b5a2a572d00
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  client-fingerprint: firefox
-  servername: 360.yandex.ru
-  skip-cert-verify: false
-  reality-opts:
-    public-key: qUq7a-iukyszVvH-5C74VBujzYAMC_shfv8O-1crZlY
-    short-id: 09fd8f6666eec544
-- name: '🇸🇪 Швеция #8 · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇸🇪 Швеция #5 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: se1.japancase.site
   port: 443
@@ -3077,36 +2242,51 @@ proxies:
   reality-opts:
     public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
     short-id: 41ae8e266bc3346f
-- name: '🇪🇪 Эстония #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇸🇪 Швеция #6 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 79.182.39.109
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  udp: true
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 71b840t.de7.h1clayd.click
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-- name: '🇪🇪 Эстония #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 217.60.182.162
-  port: 443
-  uuid: 3125236e-ea1b-4f88-b7a8-f7e1ee02d659
+  server: 62.182.193.228
+  port: 8443
+  uuid: c0d58ed7-41f8-4cf4-b61b-8ba8f6be9a46
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: ultra-vector-y3jwzsth.expresshost.cloud
+  servername: nekoboxo.isgood.host
   skip-cert-verify: false
   reality-opts:
-    public-key: HFgpbxzk696TYGPx93VcFNGLnCdu01xaMG_xFxVV8hM
-    short-id: 983b54fb2cfc68ac
-- name: '🇪🇪 Эстония #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+    public-key: G3ZzvlhhrESJFCm41agmCMitg14XGzIAaS5DpdxZxkI
+    short-id: da5e9707
+- name: '🇸🇪 Швеция #7 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 193.23.200.50
+  port: 443
+  uuid: 471137d4-112c-4402-a05e-1a4d14b6f82f
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: thumborigin.comparecarprices.org
+  skip-cert-verify: false
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: thumborigin.comparecarprices.org
+- name: '🇸🇪 Швеция #8 · 🌍 Блокировки · 📶 Белые списки'
+  type: vless
+  server: 13.53.126.218
+  port: 443
+  uuid: 205b5634-2d14-407a-b68f-34a5a66c8062
+  udp: true
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: www.google.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: BRl1X-bBwUm96ad8YgGTn3nuoRuVLGDgEzS8TiB2WV8
+    short-id: 1bfa
+- name: '🇪🇪 Эстония #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: 132.243.74.134
   port: 2087
@@ -3121,7 +2301,7 @@ proxies:
   reality-opts:
     public-key: HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww
     short-id: ''
-- name: '🇪🇪 Эстония #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇪🇪 Эстония #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
   server: ee.song69.fun
   port: 2087
@@ -3136,58 +2316,30 @@ proxies:
   reality-opts:
     public-key: HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww
     short-id: ''
-- name: '🇪🇪 Эстония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇪🇪 Эстония #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 71b840t.de7.h1clayd.click
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  udp: true
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 71b840t.de7.h1clayd.click
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-- name: '🇪🇪 Эстония #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: 71b840t.de7.h1clayd.click
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  udp: true
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 71b840t.de7.h1clayd.click
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-- name: '🇪🇪 Эстония #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  type: vless
-  server: ultra-vector-y3jwzsth.expresshost.cloud
-  port: 443
-  uuid: 3125236e-ea1b-4f88-b7a8-f7e1ee02d659
+  server: rapira-dof.whitenw.net
+  port: 8445
+  uuid: cd138479-c87a-4d4c-b6ea-4beeb6ef2b47
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: firefox
-  servername: ultra-vector-y3jwzsth.expresshost.cloud
+  client-fingerprint: chrome
+  servername: passport.yandex.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: HFgpbxzk696TYGPx93VcFNGLnCdu01xaMG_xFxVV8hM
-    short-id: 983b54fb2cfc68ac
+    public-key: l06r0clkHjHk7HRGpkDBJwZ1JJscSqfwHUQOrV3v3hQ
+    short-id: ''
 - name: '🇯🇵 Япония #1 · 🌍 Блокировки'
   type: vless
-  server: 104.16.10.22
+  server: 104.17.210.74
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   network: ws
   tls: true
-  client-fingerprint: android
+  client-fingerprint: chrome
   servername: jp3.yohototo.top
   skip-cert-verify: false
   ws-opts:
@@ -3196,7 +2348,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #2 · 🌍 Блокировки'
   type: vless
-  server: 104.21.0.87
+  server: 104.16.111.102
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3211,7 +2363,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #3 · 🌍 Блокировки'
   type: vless
-  server: 104.24.0.1
+  server: 104.21.6.186
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3226,7 +2378,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #4 · 🌍 Блокировки'
   type: vless
-  server: 104.16.111.195
+  server: 104.18.42.98
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3239,24 +2391,24 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: '🇯🇵 Япония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇯🇵 Япония #5 · 🌍 Блокировки'
   type: vless
-  server: 178.105.133.160
-  port: 4443
-  uuid: fb0818b3-4031-4843-b5f7-1d75177a1758
+  server: 104.27.46.35
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tyxyws
     headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+      Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #6 · 🌍 Блокировки'
   type: vless
-  server: 104.21.70.21
+  server: 104.21.0.87
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3271,7 +2423,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #7 · 🌍 Блокировки'
   type: vless
-  server: 172.64.152.19
+  server: 104.17.169.13
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3286,13 +2438,13 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #8 · 🌍 Блокировки'
   type: vless
-  server: 188.114.97.6
+  server: 104.19.164.155
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   network: ws
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   servername: jp3.yohototo.top
   skip-cert-verify: false
   ws-opts:
@@ -3301,7 +2453,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #9 · 🌍 Блокировки'
   type: vless
-  server: 188.114.98.0
+  server: 104.18.37.127
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3309,8 +2461,6 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: jp3.yohototo.top
-  alpn:
-  - http/1.1
   skip-cert-verify: false
   ws-opts:
     path: /tyxyws
@@ -3318,7 +2468,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #10 · 🌍 Блокировки'
   type: vless
-  server: 172.67.156.147
+  server: 104.21.33.59
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3333,22 +2483,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #11 · 🌍 Блокировки'
   type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: '🇯🇵 Япония #12 · 🌍 Блокировки'
-  type: vless
-  server: 104.21.34.106
+  server: 104.21.70.228
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3361,39 +2496,54 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: '🇯🇵 Япония #13 · 🌍 Блокировки'
+- name: '🇯🇵 Япония #12 · 🌍 Блокировки'
   type: vless
-  server: 162.159.254.3
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   network: ws
   tls: true
-  client-fingerprint: safari
+  client-fingerprint: chrome
   servername: jp3.yohototo.top
   skip-cert-verify: false
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: '🇯🇵 Япония #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+- name: '🇯🇵 Япония #13 · 🌍 Блокировки'
   type: vless
-  server: 129.153.71.28
-  port: 28863
-  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
+  server: 104.19.48.107
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tyxyws
     headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+      Host: jp3.yohototo.top
+- name: '🇯🇵 Япония #14 · 🌍 Блокировки'
+  type: vless
+  server: 104.19.33.237
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #15 · 🌍 Блокировки'
   type: vless
-  server: 104.16.10.135
+  server: 172.64.190.13
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3408,13 +2558,13 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #16 · 🌍 Блокировки'
   type: vless
-  server: 104.16.111.102
+  server: 104.24.31.89
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   network: ws
   tls: true
-  client-fingerprint: safari
+  client-fingerprint: chrome
   servername: jp3.yohototo.top
   skip-cert-verify: false
   ws-opts:
@@ -3423,7 +2573,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #17 · 🌍 Блокировки'
   type: vless
-  server: 104.16.0.1
+  server: 104.16.111.195
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3438,7 +2588,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: '🇯🇵 Япония #18 · 🌍 Блокировки'
   type: vless
-  server: 104.16.10.72
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -3451,67 +2601,67 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: '🇯🇵 Япония #19 · 🌍 Блокировки'
+- name: '🇯🇵 Япония #19 · 🌍 Блокировки · 📶 Белые списки'
   type: vless
-  server: 172.67.217.240
+  server: 13.158.193.100
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 39cae748-e447-4642-ae89-747b69837422
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: safari
-  servername: jp3.yohototo.top
+  client-fingerprint: firefox
+  servername: download-porter.hoyoverse.com
   skip-cert-verify: false
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: '🇯🇵 Япония #20 · 🌍 Блокировки'
-  type: vless
-  server: 104.18.153.10
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: '🇯🇵 Япония #21 · 🌍 Блокировки'
-  type: vless
-  server: 104.19.33.25
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+  reality-opts:
+    public-key: p6pNXigacmPazS1t76m66ia0DcFgAxOshOiPgzVvNGs
+    short-id: '44099498'
 - name: '🇷🇺 Россия #1 · 📶 Белые списки'
   type: vless
-  server: 188.130.209.204
-  port: 443
-  uuid: 4a0812f0-f9d7-4afd-9ae3-6c38e1e59485
+  server: 147.45.104.86
+  port: 7443
+  uuid: af185070-7170-46a8-b1e9-d61a035f4691
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: qq
-  servername: promo-digital.wb.ru
+  servername: max.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: 3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc
-    short-id: d3f314d0b692f63d
+    public-key: KbjX7IJnVtwq2USeRmLgXzACOtFCiA5lnsXhIFOX3ho
+    short-id: a7eb8a4e
 - name: '🇷🇺 Россия #2 · 📶 Белые списки'
+  type: vless
+  server: 83.147.246.12
+  port: 443
+  uuid: 3bb97d46-789b-4229-88f6-9beb222a4137
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: yoy-api.bachidze.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ZJlfiMh4ebjrTl2_kwAk_zXMAaCiwNS7yMd5XzlUgmI
+    short-id: ''
+- name: '🇷🇺 Россия #3 · 📶 Белые списки'
+  type: vless
+  server: 217.25.93.165
+  port: 443
+  uuid: 3bb97d46-789b-4229-88f6-9beb222a4137
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: firefox
+  servername: yoy-api.bachidze.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ZJlfiMh4ebjrTl2_kwAk_zXMAaCiwNS7yMd5XzlUgmI
+    short-id: ''
+- name: '🇷🇺 Россия #4 · 📶 Белые списки'
   type: vless
   server: yoy-api.bachidze.com
   port: 443
@@ -3526,121 +2676,96 @@ proxies:
   reality-opts:
     public-key: ZJlfiMh4ebjrTl2_kwAk_zXMAaCiwNS7yMd5XzlUgmI
     short-id: ''
-- name: '🇷🇺 Россия #3 · 📶 Белые списки'
-  type: vless
-  server: 45.91.55.140
-  port: 443
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: 9900edx.msk2.h1clayd.click
-  skip-cert-verify: false
-  reality-opts:
-    public-key: yMB1YpMhoF4j800rMjlWy97QAwvNwHwjuH1qKNSGfCA
-    short-id: 0b10c773673c6438
-  xhttp-opts:
-    path: /ee321f6e0f15
-    mode: auto
-    host: 9900edx.msk2.h1clayd.click
-- name: '🇷🇺 Россия #4 · 📶 Белые списки'
-  type: vless
-  server: 9900edx.msk2.h1clayd.click
-  port: 443
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-  udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: 9900edx.msk2.h1clayd.click
-  skip-cert-verify: false
-  reality-opts:
-    public-key: yMB1YpMhoF4j800rMjlWy97QAwvNwHwjuH1qKNSGfCA
-    short-id: 0b10c773673c6438
-  xhttp-opts:
-    path: /ee321f6e0f15
-    mode: auto
-    host: 9900edx.msk2.h1clayd.click
 - name: '🇷🇺 Россия #5 · 📶 Белые списки'
   type: vless
-  server: 9900edx.msk2.h1clayd.click
-  port: 443
-  uuid: 13e6bdfd-d51b-4e57-a40e-b88784cba8bd
+  server: 147.45.104.86
+  port: 7443
+  uuid: 5d978525-bfa5-4b1e-b807-c4e2ac2db56d
   udp: true
-  network: xhttp
-  tls: true
-  client-fingerprint: ios
-  servername: 9900edx.msk2.h1clayd.click
-  skip-cert-verify: false
-  reality-opts:
-    public-key: yMB1YpMhoF4j800rMjlWy97QAwvNwHwjuH1qKNSGfCA
-    short-id: 0b10c773673c6438
-  xhttp-opts:
-    path: /ee321f6e0f15
-    mode: auto
-    host: 9900edx.msk2.h1clayd.click
-- name: '🇷🇺 Россия #6 · 📶 Белые списки'
-  type: vless
-  server: 45.91.55.140
-  port: 443
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-  udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
   client-fingerprint: firefox
-  servername: 9e72bbg.msk2.h1clayd.click
+  servername: max.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: 0R5QIf2DFXNgISIYDQdoWIdbNoImaJHrwOkc2tzRPyQ
-    short-id: cc07501e28b18687
-  grpc-opts:
-    grpc-service-name: 93013a569b78
+    public-key: KbjX7IJnVtwq2USeRmLgXzACOtFCiA5lnsXhIFOX3ho
+    short-id: a7eb8a4e
+- name: '🇷🇺 Россия #6 · 📶 Белые списки'
+  type: vless
+  server: 188.130.209.204
+  port: 443
+  uuid: 4a0812f0-f9d7-4afd-9ae3-6c38e1e59485
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: random
+  servername: promo-digital.wb.ru
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc
+    short-id: d3f314d0b692f63d
 - name: '🇷🇺 Россия #7 · 📶 Белые списки'
   type: vless
-  server: 9e72bbg.msk2.h1clayd.click
+  server: 188.130.209.204
   port: 443
-  uuid: 13e6bdfd-d51b-4e57-a40e-b88784cba8bd
+  uuid: 4a0812f0-f9d7-4afd-9ae3-6c38e1e59485
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: chrome
-  servername: 9e72bbg.msk2.h1clayd.click
+  client-fingerprint: ios
+  servername: promo-digital.wb.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: 0R5QIf2DFXNgISIYDQdoWIdbNoImaJHrwOkc2tzRPyQ
-    short-id: cc07501e28b18687
-  grpc-opts:
-    grpc-service-name: 93013a569b78
+    public-key: 3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc
+    short-id: d3f314d0b692f63d
 - name: '🇷🇺 Россия #8 · 📶 Белые списки'
   type: vless
-  server: 9e72bbg.msk2.h1clayd.click
+  server: 188.130.209.204
   port: 443
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+  uuid: 4a0812f0-f9d7-4afd-9ae3-6c38e1e59485
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  client-fingerprint: chrome
-  servername: 9e72bbg.msk2.h1clayd.click
+  client-fingerprint: firefox
+  servername: promo-digital.wb.ru
   skip-cert-verify: false
   reality-opts:
-    public-key: 0R5QIf2DFXNgISIYDQdoWIdbNoImaJHrwOkc2tzRPyQ
-    short-id: cc07501e28b18687
-  grpc-opts:
-    grpc-service-name: 93013a569b78
+    public-key: 3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc
+    short-id: d3f314d0b692f63d
 - name: '🇷🇺 Россия #9 · 📶 Белые списки'
   type: vless
-  server: 77.232.135.141
-  port: 8445
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  server: ru1.aoyou.stream
+  port: 443
+  uuid: 1d2392a0-1713-4ea9-be88-8a1e5ddab6bd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  client-fingerprint: chrome
+  servername: news.apple.com
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 7ZOPr8Vbg0jSLw91-ONdvxGzGfen9sRz1VMpmau72RY
+    short-id: 31a2cc
+- name: '🇷🇺 Россия #10 · 📶 Белые списки'
+  type: vless
+  server: 201.24.121.243
+  port: 443
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
   udp: true
   network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: ru1.radiolumens.uk
+  servername: kk-ru24a1.testkknegr.online
+  alpn:
+  - h2
   skip-cert-verify: false
   grpc-opts:
-    grpc-service-name: beru-pl
+    grpc-service-name: vlgrpc
 proxy-groups:
 - name: 🚀 АнтиБабкаВПН
   type: select
@@ -3656,20 +2781,20 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - '🇦🇱 AL #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇱 AL #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇺 EU #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇺 EU #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇲🇰 MK #1 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇲🇰 MK #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇺 Австралия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇦🇿 Азербайджан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇾 Беларусь #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇾 Беларусь #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇾 Беларусь #3 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇾 Беларусь #4 · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇬 Болгария #1 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇬 Болгария #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -3679,15 +2804,17 @@ proxy-groups:
   - '🇬🇧 Великобритания #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #9 · 🤖 ИИ · 🌍 Блокировки'
   - '🇬🇧 Великобритания #10 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #12 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #12 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇬🇧 Великобритания #13 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #14 · 🤖 ИИ · 🌍 Блокировки'
   - '🇩🇪 Германия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #3 · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #7 · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -3695,177 +2822,120 @@ proxy-groups:
   - '🇩🇪 Германия #12 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #13 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #16 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #17 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #18 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #19 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #19 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #20 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #21 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #22 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #21 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #23 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇭🇰 Гонконг #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇮🇳 Индия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇾 Кипр #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇰🇷 Корея #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇻 Латвия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #8 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #7 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #1 · 🌍 Блокировки'
   - '🇳🇱 Нидерланды #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #7 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #10 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #11 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #12 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #13 · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #14 · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #15 · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #16 · 🌍 Блокировки'
   - '🇵🇱 Польша #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #3 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #4 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇵🇱 Польша #8 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #8 · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇺🇸 США #9 · 🌍 Блокировки'
   - '🇺🇸 США #10 · 🌍 Блокировки'
   - '🇺🇸 США #11 · 🌍 Блокировки'
-  - '🇺🇸 США #12 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇺🇸 США #12 · 🌍 Блокировки'
   - '🇺🇸 США #13 · 🌍 Блокировки'
   - '🇺🇸 США #14 · 🌍 Блокировки'
-  - '🇺🇸 США #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #19 · 🌍 Блокировки'
-  - '🇺🇸 США #20 · 🌍 Блокировки'
-  - '🇺🇸 США #21 · 🌍 Блокировки'
-  - '🇺🇸 США #22 · 🌍 Блокировки'
-  - '🇺🇸 США #23 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #1 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #2 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #3 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #4 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #5 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #6 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #7 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #8 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #9 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #10 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #11 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #12 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #13 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #14 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #15 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #16 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #17 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #18 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #19 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #20 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #21 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #22 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #23 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #24 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #25 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #26 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #27 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #28 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #29 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #30 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #31 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #32 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #33 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #34 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #35 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #36 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #37 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #38 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #39 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #40 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #41 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #42 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #43 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #44 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #45 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #46 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #47 · 🌍 Блокировки'
+  - '🇺🇸 США #15 · 🌍 Блокировки'
+  - '🇺🇸 США #16 · 🌍 Блокировки'
+  - '🇸🇬 Сингапур #1 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #3 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #4 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇮 Словения #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇮 Словения #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇹🇼 Тайвань #1 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #2 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #3 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #4 · 🤖 ИИ · 🌍 Блокировки'
   - '🇹🇷 Турция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇹🇷 Турция #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇹🇷 Турция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇹🇷 Турция #3 · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇮 Финляндия #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇮 Финляндия #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇷 Франция #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #5 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇫🇷 Франция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #11 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇨🇿 Чехия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇨🇭 Швейцария #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #6 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇪 Швеция #7 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇪 Швеция #8 · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇯🇵 Япония #1 · 🌍 Блокировки'
   - '🇯🇵 Япония #2 · 🌍 Блокировки'
   - '🇯🇵 Япония #3 · 🌍 Блокировки'
   - '🇯🇵 Япония #4 · 🌍 Блокировки'
-  - '🇯🇵 Япония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇯🇵 Япония #5 · 🌍 Блокировки'
   - '🇯🇵 Япония #6 · 🌍 Блокировки'
   - '🇯🇵 Япония #7 · 🌍 Блокировки'
   - '🇯🇵 Япония #8 · 🌍 Блокировки'
@@ -3874,14 +2944,12 @@ proxy-groups:
   - '🇯🇵 Япония #11 · 🌍 Блокировки'
   - '🇯🇵 Япония #12 · 🌍 Блокировки'
   - '🇯🇵 Япония #13 · 🌍 Блокировки'
-  - '🇯🇵 Япония #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇯🇵 Япония #14 · 🌍 Блокировки'
   - '🇯🇵 Япония #15 · 🌍 Блокировки'
   - '🇯🇵 Япония #16 · 🌍 Блокировки'
   - '🇯🇵 Япония #17 · 🌍 Блокировки'
   - '🇯🇵 Япония #18 · 🌍 Блокировки'
-  - '🇯🇵 Япония #19 · 🌍 Блокировки'
-  - '🇯🇵 Япония #20 · 🌍 Блокировки'
-  - '🇯🇵 Япония #21 · 🌍 Блокировки'
+  - '🇯🇵 Япония #19 · 🌍 Блокировки · 📶 Белые списки'
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 50
@@ -3897,20 +2965,20 @@ proxy-groups:
   type: url-test
   proxies:
   - '🇦🇱 AL #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇱 AL #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇺 EU #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇺 EU #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇲🇰 MK #1 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇲🇰 MK #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇺 Австралия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇦🇿 Азербайджан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇾 Беларусь #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇾 Беларусь #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇾 Беларусь #3 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇾 Беларусь #4 · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇬 Болгария #1 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇬 Болгария #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -3918,14 +2986,14 @@ proxy-groups:
   - '🇬🇧 Великобритания #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇬🇧 Великобритания #12 · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #3 · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #7 · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -3933,114 +3001,101 @@ proxy-groups:
   - '🇩🇪 Германия #12 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #13 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #16 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #17 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #18 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #19 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #19 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #20 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #21 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #22 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #21 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #23 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇭🇰 Гонконг #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇮🇳 Индия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇾 Кипр #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇰🇷 Корея #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇻 Латвия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #8 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #7 · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #7 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #10 · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #3 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #4 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #8 · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #23 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #13 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #18 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #28 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #36 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #37 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #1 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #3 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #4 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇮 Словения #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇮 Словения #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇹🇷 Турция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇹🇷 Турция #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇹🇷 Турция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇹🇷 Турция #3 · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇮 Финляндия #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇮 Финляндия #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇷 Франция #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇨🇿 Чехия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇨🇭 Швейцария #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #6 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇪 Швеция #7 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇪 Швеция #8 · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇯🇵 Япония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇯🇵 Япония #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇯🇵 Япония #19 · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇺 Россия #1 · 📶 Белые списки'
   - '🇷🇺 Россия #2 · 📶 Белые списки'
   - '🇷🇺 Россия #3 · 📶 Белые списки'
@@ -4050,6 +3105,7 @@ proxy-groups:
   - '🇷🇺 Россия #7 · 📶 Белые списки'
   - '🇷🇺 Россия #8 · 📶 Белые списки'
   - '🇷🇺 Россия #9 · 📶 Белые списки'
+  - '🇷🇺 Россия #10 · 📶 Белые списки'
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 50
@@ -4058,11 +3114,15 @@ proxy-groups:
   type: url-test
   proxies:
   - '🇦🇱 AL #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇱 AL #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇲🇰 MK #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇺 Австралия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇦🇿 Азербайджан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -4072,15 +3132,13 @@ proxy-groups:
   - '🇬🇧 Великобритания #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #9 · 🤖 ИИ · 🌍 Блокировки'
   - '🇬🇧 Великобритания #10 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #12 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #13 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #14 · 🤖 ИИ · 🌍 Блокировки'
   - '🇩🇪 Германия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -4088,115 +3146,79 @@ proxy-groups:
   - '🇩🇪 Германия #12 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #13 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #19 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #21 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇮🇳 Индия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇰🇷 Корея #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇻 Латвия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #11 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #12 · 🤖 ИИ · 🌍 Блокировки'
   - '🇵🇱 Польша #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇵🇱 Польша #8 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #12 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇺🇸 США #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #23 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #6 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #11 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #15 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #28 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #30 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #32 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #33 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #37 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #40 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #41 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #43 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #44 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #46 · 🤖 ИИ · 🌍 Блокировки'
   - '🇸🇮 Словения #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇮 Словения #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇹🇼 Тайвань #1 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #2 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #3 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #4 · 🤖 ИИ · 🌍 Блокировки'
   - '🇹🇷 Турция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇹🇷 Турция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #5 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇫🇷 Франция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #11 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇨🇿 Чехия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇯🇵 Япония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇯🇵 Япония #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 50
@@ -4213,6 +3235,7 @@ proxy-groups:
   - '🇷🇺 Россия #7 · 📶 Белые списки'
   - '🇷🇺 Россия #8 · 📶 Белые списки'
   - '🇷🇺 Россия #9 · 📶 Белые списки'
+  - '🇷🇺 Россия #10 · 📶 Белые списки'
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 50
@@ -4221,20 +3244,20 @@ proxy-groups:
   type: select
   proxies:
   - '🇦🇱 AL #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇱 AL #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇺 EU #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇺 EU #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇲🇰 MK #1 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇲🇰 MK #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇺 Австралия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇦🇹 Австрия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇦🇿 Азербайджан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇦🇹 Австрия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇾 Беларусь #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇾 Беларусь #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇾 Беларусь #3 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇾 Беларусь #4 · 🌍 Блокировки · 📶 Белые списки'
   - '🇧🇬 Болгария #1 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇧🇬 Болгария #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -4244,15 +3267,17 @@ proxy-groups:
   - '🇬🇧 Великобритания #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇬🇧 Великобритания #9 · 🤖 ИИ · 🌍 Блокировки'
   - '🇬🇧 Великобритания #10 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇬🇧 Великобритания #12 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #11 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #12 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇬🇧 Великобритания #13 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇬🇧 Великобритания #14 · 🤖 ИИ · 🌍 Блокировки'
   - '🇩🇪 Германия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #3 · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #7 · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
@@ -4260,177 +3285,120 @@ proxy-groups:
   - '🇩🇪 Германия #12 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #13 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #16 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #17 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #18 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #19 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #19 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇩🇪 Германия #20 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #21 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇩🇪 Германия #22 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #21 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇩🇪 Германия #23 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇭🇰 Гонконг #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇮🇳 Индия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇸 Испания #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇪🇸 Испания #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇿 Казахстан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇰🇿 Казахстан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇦 Канада #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇾 Кипр #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇰🇷 Корея #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇰🇷 Корея #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇻 Латвия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇱🇹 Литва #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇱🇹 Литва #8 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇱🇹 Литва #7 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #1 · 🌍 Блокировки'
   - '🇳🇱 Нидерланды #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇳🇱 Нидерланды #7 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇳🇱 Нидерланды #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #10 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇳🇱 Нидерланды #11 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #12 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #13 · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #14 · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #15 · 🌍 Блокировки'
+  - '🇳🇱 Нидерланды #16 · 🌍 Блокировки'
   - '🇵🇱 Польша #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #2 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #3 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #4 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇵🇱 Польша #8 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇵🇱 Польша #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇵🇱 Польша #8 · 🌍 Блокировки · 📶 Белые списки'
   - '🇵🇱 Польша #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇵🇱 Польша #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇴 Румыния #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇷🇴 Румыния #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇸 США #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇺🇸 США #9 · 🌍 Блокировки'
   - '🇺🇸 США #10 · 🌍 Блокировки'
   - '🇺🇸 США #11 · 🌍 Блокировки'
-  - '🇺🇸 США #12 · 🤖 ИИ · 🌍 Блокировки'
+  - '🇺🇸 США #12 · 🌍 Блокировки'
   - '🇺🇸 США #13 · 🌍 Блокировки'
   - '🇺🇸 США #14 · 🌍 Блокировки'
-  - '🇺🇸 США #15 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #16 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #17 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #18 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇸 США #19 · 🌍 Блокировки'
-  - '🇺🇸 США #20 · 🌍 Блокировки'
-  - '🇺🇸 США #21 · 🌍 Блокировки'
-  - '🇺🇸 США #22 · 🌍 Блокировки'
-  - '🇺🇸 США #23 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #1 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #2 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #3 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #4 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #5 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #6 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #7 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #8 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #9 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #10 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #11 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #12 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #13 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #14 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #15 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #16 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #17 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #18 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #19 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #20 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #21 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #22 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #23 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #24 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #25 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #26 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #27 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #28 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #29 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #30 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #31 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #32 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #33 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #34 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #35 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #36 · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #37 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇬 Сингапур #38 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #39 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #40 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #41 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #42 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #43 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #44 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #45 · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #46 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇸🇬 Сингапур #47 · 🌍 Блокировки'
+  - '🇺🇸 США #15 · 🌍 Блокировки'
+  - '🇺🇸 США #16 · 🌍 Блокировки'
+  - '🇸🇬 Сингапур #1 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #3 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇬 Сингапур #4 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇮 Словения #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇮 Словения #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇹🇼 Тайвань #1 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #2 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #3 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇹🇼 Тайвань #4 · 🤖 ИИ · 🌍 Блокировки'
   - '🇹🇷 Турция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇹🇷 Турция #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇹🇷 Турция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇹🇷 Турция #3 · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇺🇿 Узбекистан #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇺🇿 Узбекистан #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇮 Финляндия #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇮 Финляндия #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇮 Финляндия #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇮 Финляндия #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇫🇷 Франция #1 · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇫🇷 Франция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #5 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇫🇷 Франция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #8 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #9 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #10 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇫🇷 Франция #11 · 🤖 ИИ · 🌍 Блокировки'
-  - '🇨🇿 Чехия #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇨🇭 Швейцария #2 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇨🇭 Швейцария #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇸🇪 Швеция #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇨🇭 Швейцария #6 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #5 · 🌍 Блокировки · 📶 Белые списки'
+  - '🇸🇪 Швеция #6 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇪 Швеция #7 · 🌍 Блокировки · 📶 Белые списки'
   - '🇸🇪 Швеция #8 · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #1 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #2 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇪🇪 Эстония #3 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #4 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #6 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
-  - '🇪🇪 Эстония #7 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
   - '🇯🇵 Япония #1 · 🌍 Блокировки'
   - '🇯🇵 Япония #2 · 🌍 Блокировки'
   - '🇯🇵 Япония #3 · 🌍 Блокировки'
   - '🇯🇵 Япония #4 · 🌍 Блокировки'
-  - '🇯🇵 Япония #5 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇯🇵 Япония #5 · 🌍 Блокировки'
   - '🇯🇵 Япония #6 · 🌍 Блокировки'
   - '🇯🇵 Япония #7 · 🌍 Блокировки'
   - '🇯🇵 Япония #8 · 🌍 Блокировки'
@@ -4439,14 +3407,12 @@ proxy-groups:
   - '🇯🇵 Япония #11 · 🌍 Блокировки'
   - '🇯🇵 Япония #12 · 🌍 Блокировки'
   - '🇯🇵 Япония #13 · 🌍 Блокировки'
-  - '🇯🇵 Япония #14 · 🤖 ИИ · 🌍 Блокировки · 📶 Белые списки'
+  - '🇯🇵 Япония #14 · 🌍 Блокировки'
   - '🇯🇵 Япония #15 · 🌍 Блокировки'
   - '🇯🇵 Япония #16 · 🌍 Блокировки'
   - '🇯🇵 Япония #17 · 🌍 Блокировки'
   - '🇯🇵 Япония #18 · 🌍 Блокировки'
-  - '🇯🇵 Япония #19 · 🌍 Блокировки'
-  - '🇯🇵 Япония #20 · 🌍 Блокировки'
-  - '🇯🇵 Япония #21 · 🌍 Блокировки'
+  - '🇯🇵 Япония #19 · 🌍 Блокировки · 📶 Белые списки'
   - '🇷🇺 Россия #1 · 📶 Белые списки'
   - '🇷🇺 Россия #2 · 📶 Белые списки'
   - '🇷🇺 Россия #3 · 📶 Белые списки'
@@ -4456,6 +3422,7 @@ proxy-groups:
   - '🇷🇺 Россия #7 · 📶 Белые списки'
   - '🇷🇺 Россия #8 · 📶 Белые списки'
   - '🇷🇺 Россия #9 · 📶 Белые списки'
+  - '🇷🇺 Россия #10 · 📶 Белые списки'
 rules:
 - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
 - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
